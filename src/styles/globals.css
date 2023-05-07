@@ -29,7 +29,6 @@ button:hover,
 button:focus {
   outline: none;
   border: none;
-  background-color: transparent;
   display: "block";
 }
 

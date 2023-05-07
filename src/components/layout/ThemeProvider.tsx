@@ -71,6 +71,13 @@ const theme = createTheme({
       paper: "#777777",
     },
   },
+  components: {
+    MuiButton: {
+      styleOverrides: {
+        contained: {},
+      },
+    },
+  },
 });
 
 const ThemeProvider = ({

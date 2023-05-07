@@ -1,16 +1,18 @@
+import type { HeroIllustrationProps } from "@/types/hero-props";
 import Box from "@mui/material/Box";
 
 const HeroIllustration = ({
-  src,
+  imgSrc,
   alt,
   sx,
-}: {
-  src: string;
-  alt: string;
-  sx?: any;
-}) => {
+}: HeroIllustrationProps) => {
   return (
-    <Box component="img" src={src} alt={alt} sx={sx || {}}></Box>
+    <Box
+      component="img"
+      src={imgSrc}
+      alt={alt || ""}
+      sx={sx}
+    ></Box>
   );
 };
 

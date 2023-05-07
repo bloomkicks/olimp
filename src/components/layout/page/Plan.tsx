@@ -15,6 +15,7 @@ const Plan = ({
         {title || "ПЛАН ОБУЧЕНИЯ"}
       </Typography>
       <Stack
+        display="inline-flex"
         alignItems="flex-start"
         justifyContent="flex-start"
         mx="auto"

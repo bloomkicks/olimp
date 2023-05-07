@@ -10,7 +10,7 @@ const MenuSetter = ({
   const bars = ["#A84D4D", "#75C997", "#726BCB"];
 
   return (
-    <Box component="button" onClick={onClick}>
+    <Box component="button" onClick={onClick} sx={{bgcolor: 'transparent'}}>
       {bars.map((color, i) => (
         <Box
           width={40}
