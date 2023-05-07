@@ -81,11 +81,7 @@ const theme = createTheme({
   },
 });
 
-const ThemeProvider = ({
-  children,
-}: {
-  children: React.ReactNode;
-}) => {
+const ThemeProvider = ({ children }) => {
   return (
     <Provider theme={theme}>
       <CssBaseline />

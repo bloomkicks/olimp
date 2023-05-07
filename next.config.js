@@ -6,7 +6,7 @@ const nextConfig = {
   reactStrictMode: true,
   output: "export",
   distDir: "build",
-  assetsPath: "./",
+  assetPrefix: "./",
 };
 
 module.exports = nextConfig;
