@@ -1,5 +1,5 @@
 import Typography from "@mui/material/Typography" 
-import Paragraph from "@/components/layout/page/paragraph/Paragraph";
+import Paragraph from "@/components/layout/page-content/Paragraph";
 import MainHero from "@/components/main/MainHero";
 
 const MainPage = () => {

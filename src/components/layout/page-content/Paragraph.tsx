@@ -16,7 +16,7 @@ const Paragraph = ({
       px={3.5}
       minWidth={340}
       sx={{
-        "& > p": {
+        "& > div": {
           mt: "7px",
         },
         "& > .code": {

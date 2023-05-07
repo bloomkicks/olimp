@@ -10,14 +10,26 @@ const MenuSetter = ({
   const bars = ["#A84D4D", "#75C997", "#726BCB"];
 
   return (
-    <Box component="button" onClick={onClick} sx={{bgcolor: 'transparent'}}>
+    <Box
+      component="button"
+      onClick={onClick}
+      sx={{
+        p: "3px",
+        bgcolor: "transparent",
+        transition: "transform 0.1s ease-out",
+        cursor: "pointer",
+        "&:hover, &:focus-visible": {
+          transform: "scaleX(1.1)",
+        },
+      }}
+    >
       {bars.map((color, i) => (
         <Box
           width={40}
           height={5}
           sx={{
             bgcolor: color,
-            mb: i === 2 ? 0 : "6px",
+            mb: i === 2 ? 0 : "5px",
             transition: "transform 0.4s ease-out",
             transform: isCross
               ? i == 0

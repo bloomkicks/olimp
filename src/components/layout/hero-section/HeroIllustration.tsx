@@ -11,7 +11,7 @@ const HeroIllustration = ({
       component="img"
       src={imgSrc}
       alt={alt || ""}
-      sx={sx}
+      sx={{ width: "100%", ...sx }}
     ></Box>
   );
 };

@@ -54,16 +54,17 @@ const theme = createTheme({
     },
     text: {
       default: "#000000",
-      bold: "#CF7A16",
+      highlight: "#CF7A16",
       variable: "#074FA5",
       result: "#AE3E3E",
+      keyword: "#A06CDF",
     },
     code: {
       default: "#FFFFFF",
       variable: "#BBD6FF",
       function: "#F2FFA5",
       value: "#92FF77",
-      keywords: "#D7B8FF",
+      keyword: "#D7B8FF",
       comment: "#B7FFF2",
     },
     background: {

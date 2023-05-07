@@ -1,11 +1,11 @@
-import HeroSection from "../layout/page/HeroSection";
+import HeroSection from "../layout/hero-section/HeroSection";
 
 const PythonHero = () => {
   return (
     <HeroSection
       heading="ИЗУЧЕНИЕ ЯЗЫКА PYTHON"
       descTitle="Программирование на языке Python"
-      description="Начнем с того, что нам нужно выбрать язык, на котором мы будем писать решение. В большинстве случаев нам подойдет Python с чистым синтаксисом и широким функционалом"
+      description="Начнем с того, что нам нужно выбрать язык, на котором мы будем писать решение. Новичкам хорошо подойдет Python с простым синтаксисом и широким функционалом"
       planTitle="ПЛАН ОБУЧЕНИЯ"
       planPoints={[
         "Установка Python и IDE",

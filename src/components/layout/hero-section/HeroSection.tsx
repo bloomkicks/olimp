@@ -22,7 +22,7 @@ const HeroSection = ({
         alignItems="center"
         justifyContent="center"
         position="relative"
-        mt={6}
+        mt={7.5}
         mb={6}
       >
         <Typography

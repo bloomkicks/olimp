@@ -9,7 +9,12 @@ const PythonPage = () => {
       <PythonParagraphs />
       <Button
         variant="contained"
-        sx={{ px: 3.5, py: 1.25, borderRadius: 20, mx: "auto" }}
+        sx={{
+          px: 3.75,
+          py: 1.2,
+          borderRadius: 18,
+          mx: 3.5,
+        }}
       >
         ПРОДОЛЖИТЬ ПОДГОТОВКУ
       </Button>

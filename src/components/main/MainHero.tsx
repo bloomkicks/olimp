@@ -1,4 +1,4 @@
-import HeroSection from "../layout/page/HeroSection";
+import HeroSection from "../layout/hero-section/HeroSection";
 
 const MainHero = () => {
   return (

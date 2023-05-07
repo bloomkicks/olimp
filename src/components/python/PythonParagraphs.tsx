@@ -1,12 +1,9 @@
-import type {
-  Paragraph as TParagraph,
-  SubPara,
-} from "@/types/paragraphs";
 import Box from "@mui/material/Box";
-import Paragraph from "../layout/page/paragraph/Paragraph";
-import TextSubPara from "../layout/page/paragraph/TextSubPara";
-import CodeSection from "../layout/page/paragraph/CodeSection";
-import CodeLine from "../layout/page/paragraph/CodeLine";
+import Span from "../layout/page-content/Span";
+import Paragraph from "../layout/page-content/Paragraph";
+import TextSubPara from "../layout/page-content/TextSubPara";
+import CodeSection from "../layout/page-content/CodeSection";
+import CodeLine from "../layout/page-content/CodeLine";
 
 const PythonParagraphs = () => {
   return (
@@ -21,14 +18,16 @@ const PythonParagraphs = () => {
         </TextSubPara>
         <TextSubPara>
           Для этих целей нам подойдут курсы, перечисленные в статье:{" "}
-          <a>https://www.freecodecamp.org/news/best-python-courses</a>
+          <Span type="link" href="this">
+            https://www.freecodecamp.org/news/best-python-courses
+          </Span>
           , из которых я рекоммендую краш-курс от Гугла, но не бойтесь
           выбирать варианты, удобные лично для вас. Если вас
           интересуют курсы на русском языке, то вам подойдет курс
           Густокашина:{" "}
-          <a>
+          <Span type="link" href="this">
             https://www.coursera.org/learn/python-osnovy-programmirovaniya
-          </a>
+          </Span>
         </TextSubPara>
         <TextSubPara>
           Независимо от выбранного вами курса, не забудьте, что для
@@ -46,7 +45,9 @@ const PythonParagraphs = () => {
         </TextSubPara>
         <TextSubPara>
           Python можно установить на компьютер с официального сайта:{" "}
-          <a>https://www.python.org/downloads</a>
+          <Span type="link" href="this">
+            https://www.python.org/downloads
+          </Span>
         </TextSubPara>
         <TextSubPara>
           Существует много разных IDE (Integrated Development
@@ -54,7 +55,9 @@ const PythonParagraphs = () => {
           подходит VS Code, так как он бесплатный и лёгкий, а также
           для можно скачать расширения, которые вам помогут. VS Code
           можно скачать здесь:{" "}
-          <a>https://code.visualstudio.com/download</a>
+          <a type="link" href="this">
+            https://code.visualstudio.com/download
+          </a>
         </TextSubPara>
         <TextSubPara>
           Также можно работать с Python в консоли (Win + X, выбираем
@@ -66,22 +69,24 @@ const PythonParagraphs = () => {
         </TextSubPara>
         <CodeSection>
           <CodeLine>10 + 2</CodeLine>
-          <CodeLine>12</CodeLine>
+          <CodeLine type="response">12</CodeLine>
         </CodeSection>
       </Paragraph>
       <Paragraph title="2. НАЗНАЧЕНИЕ ПЕРЕМЕННЫХ">
         <TextSubPara>
           Переменные в программировании - тоже самое, что и в
-          математике. Только вместо x или y, мы называем переменную
+          математике. Только вместо <Span type="var-red">x</Span> или{" "}
+          <Span type="var-red">y</Span>, мы называем переменную
           понятнее. Например, если мы хотим хранить имя пользователя,
-          мы назовём переменную user_name.
+          мы назовём переменную <Span type="var-blue">user_name</Span>
+          .
         </TextSubPara>
         <TextSubPara>
           Чтобы обозначить переменную в Python, надо поставить между
           названием переменной и её значением знак равно:
         </TextSubPara>
         <CodeSection>
-          <CodeLine>{'user_name = "Alex"'}</CodeLine>
+          <CodeLine type="centered">{'user_name = "Alex"'}</CodeLine>
         </CodeSection>
         <TextSubPara>
           Вроде бы все прямолинейно, но что это за кавычки?
@@ -96,23 +101,34 @@ const PythonParagraphs = () => {
         <TextSubPara>
           В Python есть 5 основных типов данных:
           <Box component="ol" sx={{ pl: 3 }}>
-            <li>Integers - целые числа</li>
-            <li>Floating-point numbers - рациональные числа</li>
-            <li>Strings - строки, текст</li>
-            <li>Boolean - правда или ложь</li>
-            <li>None - отсутсвие</li>
+            <li>
+              <Span type="highlight">Integers</Span> - целые числа
+            </li>
+            <li>
+              <Span type="highlight">Floating-point numbers</Span> -
+              рациональные числа
+            </li>
+            <li>
+              <Span type="highlight">Strings</Span> - строки, текст
+            </li>
+            <li>
+              <Span type="highlight">Boolean</Span> - правда или ложь
+            </li>
+            <li>
+              <Span type="highlight">None</Span> - отсутсвие
+            </li>
           </Box>
         </TextSubPara>
         <CodeSection>
-          <CodeLine type="NO_CONSOLE">integer = 1</CodeLine>
-          <CodeLine type="NO_CONSOLE">
+          <CodeLine type="no-console">integer = 1</CodeLine>
+          <CodeLine type="no-console">
             floating_point = 0.995
           </CodeLine>
-          <CodeLine type="NO_CONSOLE">
+          <CodeLine type="no-console">
             string = “hello, world”
           </CodeLine>
-          <CodeLine type="NO_CONSOLE">boolean = True</CodeLine>
-          <CodeLine type="NO_CONSOLE">nothing = None</CodeLine>
+          <CodeLine type="no-console">boolean = True</CodeLine>
+          <CodeLine type="no-console">nothing = None</CodeLine>
         </CodeSection>
       </Paragraph>
       <Paragraph title="4. МАТЕМАТИЧЕСКИЕ ОПЕРАТОРЫ">
@@ -125,7 +141,7 @@ const PythonParagraphs = () => {
           <CodeLine>integer1 = 10</CodeLine>
           <CodeLine>integer2 = 2</CodeLine>
           <CodeLine>integer1 + integer2</CodeLine>
-          <CodeLine>12</CodeLine>
+          <CodeLine type="response">12</CodeLine>
         </CodeSection>
         <TextSubPara>
           У нас получилось тоже самое, что и при обычном сложении этих
@@ -137,8 +153,11 @@ const PythonParagraphs = () => {
         </CodeSection>
         <TextSubPara>
           Проводить такие операции можно как в математике - с помощью
-          математических операторов: + - сложение, - - вычитание, * -
-          умножение, / - деление
+          математических операторов:{" "}
+          <Span type="highlight bold">+</Span> - сложение,{" "}
+          <Span type="highlight bold">-</Span> - вычитание,{" "}
+          <Span type="highlight bold">*</Span> - умножение,{" "}
+          <Span type="highlight bold">/</Span> - деление
         </TextSubPara>
       </Paragraph>
       <Paragraph title="5. ПРОЦЕДУРЫ И ФУНКЦИИ">
@@ -149,7 +168,9 @@ const PythonParagraphs = () => {
         </TextSubPara>
         <CodeSection>
           <CodeLine comment="- операция">10 + 2</CodeLine>
-          <CodeLine comment="- ответ">12</CodeLine>
+          <CodeLine comment="- ответ" type="response">
+            12
+          </CodeLine>
         </CodeSection>
         <TextSubPara>
           Чтобы не выписывать каждый раз сложные математические
@@ -161,17 +182,18 @@ const PythonParagraphs = () => {
             def sum(num1, num2): result = num1 + num2 return result
           </CodeLine>
           <CodeLine>sum(10, 2)</CodeLine>
-          <CodeLine>12</CodeLine>
+          <CodeLine type="response">12</CodeLine>
         </CodeSection>
         <TextSubPara>
-          Кодовое слово return возвращает из функции нужное нам
-          значение - result. Мы можем присвоить его к переменной и
-          использовать дальше в программе:
+          Кодовое слово <Span type="keyword">return</Span> возвращает
+          из функции нужное нам значение -{" "}
+          <Span type="result">result</Span>. Мы можем присвоить его к
+          переменной и использовать дальше в программе:
         </TextSubPara>
         <CodeSection>
           <CodeLine>result = sum(10, 2)</CodeLine>
           <CodeLine>print(result)</CodeLine>
-          <CodeLine>12</CodeLine>
+          <CodeLine type="response">12</CodeLine>
         </CodeSection>
         <TextSubPara>
           Если же нам надо просто выполнить какие-нибудь операции без
@@ -185,10 +207,12 @@ const PythonParagraphs = () => {
             def yell(str): result = str.upper() print(result) pass
           </CodeLine>
           <CodeLine>yell(“привет”)</CodeLine>
-          <CodeLine type="CLOSE" comment="- сообщение в консоли">
+          <CodeLine type="print" comment="- сообщение в консоли">
             ПРИВЕТ
           </CodeLine>
-          <CodeLine comment="- ничего не возвратило">None</CodeLine>
+          <CodeLine type="response" comment="- ничего не возвратило">
+            None
+          </CodeLine>
         </CodeSection>
       </Paragraph>
       <Paragraph title="6. ОПЕРАТОРЫ УСЛОВИЯ">
@@ -199,7 +223,9 @@ const PythonParagraphs = () => {
           ему 18 лет или больше:
         </TextSubPara>
         <CodeSection>
-          <CodeLine>{"if age >= 18:\n access = True"}</CodeLine>
+          <CodeLine type="centered">
+            {"if age >= 18:\n access = True"}
+          </CodeLine>
         </CodeSection>
         <TextSubPara>
           {
@@ -208,12 +234,26 @@ const PythonParagraphs = () => {
         </TextSubPara>
         <TextSubPara>
           <Box component="ol" sx={{ pl: 3 }}>
-            <li>{"== - равно"}</li>
-            <li>{"> - больше"}</li>
-            <li>{"< - меньше"}</li>
-            <li>{">= - больше или равно"}</li>
-            <li>{"<= - меньше или равно"}</li>
-            <li>{"!= - не равно"}</li>
+            <li>
+              <Span type="highlight bold">{"=="}</Span> - равно
+            </li>
+            <li>
+              <Span type="highlight bold">{">"}</Span> - больше
+            </li>
+            <li>
+              <Span type="highlight bold">{"<"}</Span> - меньше
+            </li>
+            <li>
+              <Span type="highlight bold">{">="}</Span> - больше или
+              равно
+            </li>
+            <li>
+              <Span type="highlight bold">{"<="}</Span> - меньше или
+              равно
+            </li>
+            <li>
+              <Span type="highlight bold">{"!="}</Span> - не равно
+            </li>
           </Box>
         </TextSubPara>
         <TextSubPara>
@@ -231,7 +271,7 @@ const PythonParagraphs = () => {
           False:
         </TextSubPara>
         <CodeSection>
-          <CodeLine>{"access = age >= 18"}</CodeLine>
+          <CodeLine type="centered">{"access = age >= 18"}</CodeLine>
         </CodeSection>
       </Paragraph>
       <Paragraph title="7. ОПЕРАТОРЫ ЦИКЛА">
@@ -249,15 +289,21 @@ const PythonParagraphs = () => {
           <CodeLine>
             {"while num <= 100:\n num = num + 1\n print(num)"}
           </CodeLine>
-          <CodeLine>1</CodeLine>
-          <CodeLine>2</CodeLine>
-          <CodeLine>...</CodeLine>
-          <CodeLine>100</CodeLine>
+          <CodeLine type="response">1</CodeLine>
+          <CodeLine type="response">2</CodeLine>
+          <CodeLine type="response">...</CodeLine>
+          <CodeLine type="response">100</CodeLine>
         </CodeSection>
         <TextSubPara>
-          {
-            "Для использования цикла в Python, надо использовать кодовые слова: while, do ... while, for. Цикл while выполняется пока правдиво условие стоящее после него (num <= 100). Цикл do ... while отличается от предыдущего только тем, что если его условие не выполняется, он все равно выполнит операцию один раз."
-          }
+          Для использования цикла в Python, надо использовать кодовые
+          слова: <Span type="keyword">while</Span>,{" "}
+          <Span type="keyword">do ... while</Span>,{" "}
+          <Span type="keyword">for</Span>. Цикл{" "}
+          <Span type="keyword">while</Span> выполняется пока правдиво
+          условие стоящее после него (num {"<="} 100). Цикл
+          <Span type="keyword">do ... while</Span> отличается от
+          предыдущего только тем, что если его условие не выполняется,
+          он все равно выполнит операцию один раз.
         </TextSubPara>
         <TextSubPara>
           Цикл for выполняется определённое количество раз. Это
@@ -265,19 +311,19 @@ const PythonParagraphs = () => {
         </TextSubPara>
         <CodeSection>
           <CodeLine>{"for num in range(100):\n print(num)"}</CodeLine>
-          <CodeLine>1</CodeLine>
-          <CodeLine>2</CodeLine>
-          <CodeLine>...</CodeLine>
-          <CodeLine>100</CodeLine>
+          <CodeLine type="response">1</CodeLine>
+          <CodeLine type="response">2</CodeLine>
+          <CodeLine type="response">...</CodeLine>
+          <CodeLine type="response">100</CodeLine>
         </CodeSection>
       </Paragraph>
       <Paragraph title="8. СИНТАКСИС PYTHON">
         <TextSubPara>
           Можно заметили, что назначение функций, условий и циклов
           сходится в том, что их содержимое сдвинуто вправо, а после
-          названия функции, условия или цикла стоит знак двоеточия
-          (:). Если их убрать, то Python выдаст ошибку и программа не
-          будет работать:
+          названия функции, условия или цикла стоит знак двоеточия (
+          <Span type="highlight bold">:</Span>). Если их убрать, то
+          Python выдаст ошибку и программа не будет работать:
         </TextSubPara>
         <CodeSection>
           <CodeLine type="comment"># правильно</CodeLine>
@@ -289,8 +335,9 @@ const PythonParagraphs = () => {
           Также видно, что для выполнения функции, после ее названия
           нужно поставить круглые скобки, внутри которых при
           необходимости вставить аргументы. А чтобы написать
-          какое-нибудь объяснение, перед ним надо поставить хэштег
-          (#), чтобы Python не выполнял написаное.
+          какое-нибудь объяснение, перед ним надо поставить хэштег (
+          <Span type="highlight bold">#</Span>), чтобы Python не
+          выполнял написаное.
         </TextSubPara>
         <TextSubPara>
           Такие детали у каждого языка программирования различаются.
