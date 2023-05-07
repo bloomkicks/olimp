@@ -22,7 +22,7 @@ const PythonHero = () => {
         "Тестирование и дебаги",
       ]}
       illustration={{
-        imgSrc: "/illustrations/python/hero-illustration.png",
+        imgSrc: "./illustrations/python/hero-illustration.png",
         sx: {},
         alt: "",
       }}

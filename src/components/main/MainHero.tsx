@@ -15,7 +15,7 @@ const MainHero = () => {
         "Советы от победителей олимпиад",
       ]}
       illustration={{
-        imgSrc: "/illustrations/main/hero-illustration.png",
+        imgSrc: "./illustrations/main/hero-illustration.png",
         sx: {},
         alt: "",
       }}

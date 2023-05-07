@@ -34,7 +34,7 @@ const Header = () => {
       >
         <Image
           unoptimized
-          src="/long-logo.png"
+          src="./long-logo.png"
           alt="ОЛИМП"
           width={149.5}
           height={42.5}
