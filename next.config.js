@@ -1,4 +1,5 @@
 /** @type {import('next').NextConfig} */
+const isDev = process.env.NODE_ENV !== "production";
 const nextConfig = {
   images: {
     unoptimized: true,
@@ -6,7 +7,7 @@ const nextConfig = {
   reactStrictMode: true,
   output: "export",
   distDir: "build",
-  // assetPrefix: "./",
+  assetPrefix: !isDev ? "/olimp/build/" : "",
 };
 
 module.exports = nextConfig;
