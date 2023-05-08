@@ -1,3 +1,4 @@
+import Link from "next/link";
 import PythonHero from "@/components/python/PythonHero";
 import PythonParagraphs from "@/components/python/PythonParagraphs";
 import Button from "@mui/material/Button";
@@ -8,6 +9,8 @@ const PythonPage = () => {
       <PythonHero />
       <PythonParagraphs />
       <Button
+        component={Link}
+        href="/main"
         variant="contained"
         sx={{
           px: 3.75,

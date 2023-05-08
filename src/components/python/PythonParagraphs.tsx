@@ -1,22 +1,22 @@
 import Box from "@mui/material/Box";
-import Span from "../layout/page-content/Span";
-import Paragraph from "../layout/page-content/Paragraph";
-import TextSubPara from "../layout/page-content/TextSubPara";
-import CodeSection from "../layout/page-content/CodeSection";
-import CodeLine from "../layout/page-content/CodeLine";
+import Span from "../text-content/Span";
+import Paragraph from "../text-content/Paragraph";
+import SubPara from "../text-content/SubPara";
+import CodeSection from "../text-content/CodeSection";
+import CodeLine from "../text-content/CodeLine";
 
 const PythonParagraphs = () => {
   return (
     <Box>
       <Paragraph title="ОСНОВНЫЕ УЧЕБНЫЕ РЕСУРСЫ">
-        <TextSubPara>
+        <SubPara>
           В интернете существует много различных курсов по изучению
           языка Python, но некоторые из них сосредоточены на ненужных
           нам темах. Что нам нужно для олимпиады - это синтаксис
           Python, основы программирования, знание его библиотек и
           знакомство с алгортимами и структурами данных
-        </TextSubPara>
-        <TextSubPara>
+        </SubPara>
+        <SubPara>
           Для этих целей нам подойдут курсы, перечисленные в статье:{" "}
           <Span type="link" href="this">
             https://www.freecodecamp.org/news/best-python-courses
@@ -28,77 +28,81 @@ const PythonParagraphs = () => {
           <Span type="link" href="this">
             https://www.coursera.org/learn/python-osnovy-programmirovaniya
           </Span>
-        </TextSubPara>
-        <TextSubPara>
+        </SubPara>
+        <SubPara>
           Независимо от выбранного вами курса, не забудьте, что для
           олимпиады обязательно нужны выше перечисленные темы. А
           сейчас мы как раз и познакомимся с этими темами и языком
           Python. Не волнуйтесь, если что-то не поняли - это случается
           у всех, и после прохождения выбранных курсов, у вас сложится
           ясная картина
-        </TextSubPara>
+        </SubPara>
       </Paragraph>
       <Paragraph title="1. УСТАНОВКА PYTHON И IDE">
-        <TextSubPara>
+        <SubPara>
           Лучший способ учения - практика. Именно поэтому первым делом
           мы скачаем Python и приложение для работы с ним.
-        </TextSubPara>
-        <TextSubPara>
+        </SubPara>
+        <SubPara>
           Python можно установить на компьютер с официального сайта:{" "}
           <Span type="link" href="this">
             https://www.python.org/downloads
           </Span>
-        </TextSubPara>
-        <TextSubPara>
+        </SubPara>
+        <SubPara>
           Существует много разных IDE (Integrated Development
           Environment) для разработки на Python, но новичкам больше
           подходит VS Code, так как он бесплатный и лёгкий, а также
           для можно скачать расширения, которые вам помогут. VS Code
           можно скачать здесь:{" "}
-          <a type="link" href="this">
+          <Span type="link" href="this">
             https://code.visualstudio.com/download
-          </a>
-        </TextSubPara>
-        <TextSubPara>
+          </Span>
+        </SubPara>
+        <SubPara>
           Также можно работать с Python в консоли (Win + X, выбираем
           PowerShell или Command Line). Основное отличие между работе
           в IDE и консолью помимо удобства и внешнего вида является
           то, что в IDE мы пишем целую программу, состоящую из
           множества команд. А в консоли мы даем компьютеру отдельные
           команды и сразу получаем ответ:
-        </TextSubPara>
+        </SubPara>
         <CodeSection>
-          <CodeLine>10 + 2</CodeLine>
+          <CodeLine>
+            <Span>10</Span> + <Span>2</Span>
+          </CodeLine>
           <CodeLine type="response">12</CodeLine>
         </CodeSection>
       </Paragraph>
       <Paragraph title="2. НАЗНАЧЕНИЕ ПЕРЕМЕННЫХ">
-        <TextSubPara>
+        <SubPara>
           Переменные в программировании - тоже самое, что и в
           математике. Только вместо <Span type="var-red">x</Span> или{" "}
           <Span type="var-red">y</Span>, мы называем переменную
           понятнее. Например, если мы хотим хранить имя пользователя,
           мы назовём переменную <Span type="var-blue">user_name</Span>
           .
-        </TextSubPara>
-        <TextSubPara>
+        </SubPara>
+        <SubPara>
           Чтобы обозначить переменную в Python, надо поставить между
           названием переменной и её значением знак равно:
-        </TextSubPara>
+        </SubPara>
         <CodeSection>
-          <CodeLine type="centered">{'user_name = "Alex"'}</CodeLine>
+          <CodeLine type="centered">
+            <Span>user_name</Span> = <Span>{'"Alex"'}</Span>
+          </CodeLine>
         </CodeSection>
-        <TextSubPara>
+        <SubPara>
           Вроде бы все прямолинейно, но что это за кавычки?
-        </TextSubPara>
+        </SubPara>
       </Paragraph>
       <Paragraph title="3. БАЗОВЫЕ ТИПЫ ДАННЫХ">
-        <TextSubPara>
+        <SubPara>
           Дело в том, что переменная может принимать разные значения -
           строки, числа, символы и многое другое. Чтобы отличать тип
           строк от других, вокруг них и надо ставить кавычки.
-        </TextSubPara>
-        <TextSubPara>
+        </SubPara>
+        <SubPara>
           В Python есть 5 основных типов данных:
           <Box component="ol" sx={{ pl: 3 }}>
             <li>
@@ -118,95 +122,141 @@ const PythonParagraphs = () => {
               <Span type="highlight">None</Span> - отсутсвие
             </li>
           </Box>
-        </TextSubPara>
+        </SubPara>
         <CodeSection>
-          <CodeLine type="no-console">integer = 1</CodeLine>
           <CodeLine type="no-console">
-            floating_point = 0.995
+            <Span type="variable">integer</Span> = <Span>1</Span>
           </CodeLine>
           <CodeLine type="no-console">
-            string = “hello, world”
+            <Span type="variable">floating_point</Span> ={" "}
+            <Span>0.995</Span>
           </CodeLine>
-          <CodeLine type="no-console">boolean = True</CodeLine>
-          <CodeLine type="no-console">nothing = None</CodeLine>
+          <CodeLine type="no-console">
+            <Span type="variable">string</Span> ={" "}
+            <Span>{'"hello, world"'}</Span>
+          </CodeLine>
+          <CodeLine type="no-console">
+            <Span type="variable">boolean</Span> = <Span>True</Span>
+          </CodeLine>
+          <CodeLine type="no-console">
+            <Span type="variable">nothing</Span> = <Span>None</Span>
+          </CodeLine>
         </CodeSection>
       </Paragraph>
       <Paragraph title="4. МАТЕМАТИЧЕСКИЕ ОПЕРАТОРЫ">
-        <TextSubPara>
+        <SubPara>
           Но что нам делать с этими переменными? Всё что угодно, мы
           можем их складывать, умножать, делить, вычитать, проводидить
           над ними множество разных операций:
-        </TextSubPara>
+        </SubPara>
         <CodeSection>
-          <CodeLine>integer1 = 10</CodeLine>
-          <CodeLine>integer2 = 2</CodeLine>
-          <CodeLine>integer1 + integer2</CodeLine>
+          <CodeLine>
+            <Span type="variable">integer1</Span> = <Span>10</Span>
+          </CodeLine>
+          <CodeLine>
+            <Span type="variable">integer2</Span> = <Span>2</Span>
+          </CodeLine>
+          <CodeLine>
+            <Span type="variable">integer1</Span> +{" "}
+            <Span type="variable">integer2</Span>
+          </CodeLine>
           <CodeLine type="response">12</CodeLine>
         </CodeSection>
-        <TextSubPara>
+        <SubPara>
           У нас получилось тоже самое, что и при обычном сложении этих
           чисел:
-        </TextSubPara>
+        </SubPara>
         <CodeSection>
-          <CodeLine>10 + 2</CodeLine>
-          <CodeLine>12</CodeLine>
+          <CodeLine>
+            <Span>10</Span> + <Span>2</Span>
+          </CodeLine>
+          <CodeLine type="response">12</CodeLine>
         </CodeSection>
-        <TextSubPara>
+        <SubPara>
           Проводить такие операции можно как в математике - с помощью
           математических операторов:{" "}
           <Span type="highlight bold">+</Span> - сложение,{" "}
           <Span type="highlight bold">-</Span> - вычитание,{" "}
           <Span type="highlight bold">*</Span> - умножение,{" "}
           <Span type="highlight bold">/</Span> - деление
-        </TextSubPara>
+        </SubPara>
       </Paragraph>
       <Paragraph title="5. ПРОЦЕДУРЫ И ФУНКЦИИ">
-        <TextSubPara>
+        <SubPara>
           Начнем с понятия операции. Операция - это простая команда
           компьютеру. Он выполняет команду и, если надо, выдает ответ.
           Например, операцией можно назвать то же самое сложение:
-        </TextSubPara>
+        </SubPara>
         <CodeSection>
-          <CodeLine comment="- операция">10 + 2</CodeLine>
+          <CodeLine comment="- операция">
+            <Span>10</Span> + <Span>2</Span>
+          </CodeLine>
           <CodeLine comment="- ответ" type="response">
             12
           </CodeLine>
         </CodeSection>
-        <TextSubPara>
+        <SubPara>
           Чтобы не выписывать каждый раз сложные математические
           операции, мы можем назначить функции, принимающие нужные нам
           числа как аргументы:
-        </TextSubPara>
+        </SubPara>
         <CodeSection>
           <CodeLine>
-            def sum(num1, num2): result = num1 + num2 return result
+            <Span>def</Span> <Span>sum</Span>(<Span>num1</Span>,{" "}
+            <Span>num2</Span>):
+            <CodeLine type="inner">
+              <Span>result</Span> = <Span>num1</Span> +{" "}
+              <Span>num2</Span>
+            </CodeLine>
+            <CodeLine type="inner">
+              <Span>return</Span> <Span>result</Span>
+            </CodeLine>
           </CodeLine>
-          <CodeLine>sum(10, 2)</CodeLine>
+          <CodeLine>
+            <Span>sum</Span>(<Span>10</Span>, <Span>2</Span>)
+          </CodeLine>
           <CodeLine type="response">12</CodeLine>
         </CodeSection>
-        <TextSubPara>
+        <SubPara>
           Кодовое слово <Span type="keyword">return</Span> возвращает
           из функции нужное нам значение -{" "}
           <Span type="result">result</Span>. Мы можем присвоить его к
           переменной и использовать дальше в программе:
-        </TextSubPara>
+        </SubPara>
         <CodeSection>
-          <CodeLine>result = sum(10, 2)</CodeLine>
-          <CodeLine>print(result)</CodeLine>
+          <CodeLine>
+            <Span>result</Span> = <Span>sum</Span>(<Span>10</Span>,{" "}
+            <Span>2</Span>)
+          </CodeLine>
+          <CodeLine>
+            <Span>print</Span>(<Span>result</Span>)
+          </CodeLine>
           <CodeLine type="response">12</CodeLine>
         </CodeSection>
-        <TextSubPara>
+        <SubPara>
           Если же нам надо просто выполнить какие-нибудь операции без
           возвращения результатов, то таким же образом мы можем
           назначить процедуру. Она отличается от функции только
           отсутствием кодового слова return. В Питоне принято писать в
           таком случае слово pass:
-        </TextSubPara>
+        </SubPara>
         <CodeSection>
           <CodeLine>
-            def yell(str): result = str.upper() print(result) pass
+            <Span>def</Span> <Span>yell</Span>(<Span>str</Span>):
+            <CodeLine type="inner">
+              <Span>result</Span> = <Span>str</Span>.
+              <Span>upper</Span>()
+            </CodeLine>
+            <CodeLine type="inner">
+              <Span>print</Span>(<Span>result</Span>){" "}
+            </CodeLine>
+            <CodeLine type="inner">
+              <Span>pass</Span>
+            </CodeLine>
           </CodeLine>
-          <CodeLine>yell(“привет”)</CodeLine>
+          <CodeLine>
+            <Span>yell</Span>(<Span>“привет”</Span>)
+          </CodeLine>
           <CodeLine type="print" comment="- сообщение в консоли">
             ПРИВЕТ
           </CodeLine>
@@ -216,85 +266,107 @@ const PythonParagraphs = () => {
         </CodeSection>
       </Paragraph>
       <Paragraph title="6. ОПЕРАТОРЫ УСЛОВИЯ">
-        <TextSubPara>
+        <SubPara>
           Чтобы воплощать в программе более сложную логику нам нужны
           операторы условия. Например, если нам нужно проверить
           возраст пользователя и предоставить доступ к ресурсу если
           ему 18 лет или больше:
-        </TextSubPara>
+        </SubPara>
         <CodeSection>
-          <CodeLine type="centered">
-            {"if age >= 18:\n access = True"}
+          <CodeLine>
+            <Span>if</Span> <Span>age</Span> {">="} <Span>18</Span>:
+            <CodeLine type="inner">
+              <Span>access</Span> = <Span>True</Span>
+            </CodeLine>
           </CodeLine>
         </CodeSection>
-        <TextSubPara>
-          {
-            "Чтобы воплотить эту логику, нужно поставить перед условием (возраст 18 лет или больше) кодовое слово if. Равно или больше обозначается знаком >=. Такие знаки схожи с математическими:"
-          }
-        </TextSubPara>
-        <TextSubPara>
-          <Box component="ol" sx={{ pl: 3 }}>
-            <li>
-              <Span type="highlight bold">{"=="}</Span> - равно
-            </li>
-            <li>
-              <Span type="highlight bold">{">"}</Span> - больше
-            </li>
-            <li>
-              <Span type="highlight bold">{"<"}</Span> - меньше
-            </li>
-            <li>
-              <Span type="highlight bold">{">="}</Span> - больше или
-              равно
-            </li>
-            <li>
-              <Span type="highlight bold">{"<="}</Span> - меньше или
-              равно
-            </li>
-            <li>
-              <Span type="highlight bold">{"!="}</Span> - не равно
-            </li>
-          </Box>
-        </TextSubPara>
-        <TextSubPara>
+        <SubPara>
+          Чтобы воплотить эту логику, нужно поставить перед условием
+          (возраст 18 лет или больше) кодовое слово if. Равно или
+          больше обозначается знаком {">="}. Такие знаки схожи с
+          математическими:
+        </SubPara>
+        <SubPara type="ordered-list">
+          <li>
+            <Span type="highlight bold">{"=="}</Span> - равно
+          </li>
+          <li>
+            <Span type="highlight bold">{">"}</Span> - больше
+          </li>
+          <li>
+            <Span type="highlight bold">{"<"}</Span> - меньше
+          </li>
+          <li>
+            <Span type="highlight bold">{">="}</Span> - больше или
+            равно
+          </li>
+          <li>
+            <Span type="highlight bold">{"<="}</Span> - меньше или
+            равно
+          </li>
+          <li>
+            <Span type="highlight bold">{"!="}</Span> - не равно
+          </li>
+        </SubPara>
+        <SubPara>
           Существуют также кодовые слова else и elif, для того, чтобы
           выполнить команду если начальное условие не выполняется:
-        </TextSubPara>
+        </SubPara>
         <CodeSection>
-          <CodeLine>{"if age >= 18:\n access = True"}</CodeLine>
-          <CodeLine>{"else:\n access = False"}</CodeLine>
+          <CodeLine>
+            <Span>if</Span> <Span>age</Span> {">="} <Span>18</Span>:
+            <CodeLine type="inner">
+              <Span>access</Span> = <Span>True</Span>
+            </CodeLine>
+          </CodeLine>
+          <CodeLine>
+            <Span>else</Span>:
+            <CodeLine type="inner">
+              <Span>access</Span> = <Span>False</Span>
+            </CodeLine>
+          </CodeLine>
         </CodeSection>
-        <TextSubPara>
+        <SubPara>
           Однако в нашем конкретном случае намного проще сразу
           присвоить значение условия переменной access, так как
           условия - тоже процедуры, возвращающие значение True или
           False:
-        </TextSubPara>
+        </SubPara>
         <CodeSection>
-          <CodeLine type="centered">{"access = age >= 18"}</CodeLine>
+          <CodeLine type="centered">
+            <Span>access</Span> = <Span>age</Span> {">="}{" "}
+            <Span>18</Span>
+          </CodeLine>
         </CodeSection>
       </Paragraph>
       <Paragraph title="7. ОПЕРАТОРЫ ЦИКЛА">
-        <TextSubPara>
+        <SubPara>
           Также в любом языке программирования нам нужны операторы
           цикла. Они отвечают за случаи, когда нам надо повторять
           операцию множество раз.
-        </TextSubPara>
-        <TextSubPara>
+        </SubPara>
+        <SubPara>
           Например, если мы хотим досчитать до 100, нам нужно
           добавлять к начальному числу по единице, пока оно не станет
           ровно 100:
-        </TextSubPara>
+        </SubPara>
         <CodeSection>
           <CodeLine>
-            {"while num <= 100:\n num = num + 1\n print(num)"}
+            <Span>while</Span> <Span>num</Span> {"<="}{" "}
+            <Span>100</Span>:
+            <CodeLine type="inner">
+              <Span>num</Span> = <Span>num</Span> + <Span>1</Span>
+            </CodeLine>
+            <CodeLine type="inner">
+              <Span>print</Span>(<Span>num</Span>)
+            </CodeLine>
           </CodeLine>
           <CodeLine type="response">1</CodeLine>
           <CodeLine type="response">2</CodeLine>
           <CodeLine type="response">...</CodeLine>
           <CodeLine type="response">100</CodeLine>
         </CodeSection>
-        <TextSubPara>
+        <SubPara>
           Для использования цикла в Python, надо использовать кодовые
           слова: <Span type="keyword">while</Span>,{" "}
           <Span type="keyword">do ... while</Span>,{" "}
@@ -304,13 +376,19 @@ const PythonParagraphs = () => {
           <Span type="keyword">do ... while</Span> отличается от
           предыдущего только тем, что если его условие не выполняется,
           он все равно выполнит операцию один раз.
-        </TextSubPara>
-        <TextSubPara>
+        </SubPara>
+        <SubPara>
           Цикл for выполняется определённое количество раз. Это
           количество мы передаем с встроенной функцией range:
-        </TextSubPara>
+        </SubPara>
         <CodeSection>
-          <CodeLine>{"for num in range(100):\n print(num)"}</CodeLine>
+          <CodeLine>
+            <Span>for</Span> <Span>num</Span> <Span>in</Span>{" "}
+            <Span>range</Span>(<Span>100</Span>):{" "}
+            <CodeLine type="inner">
+              <Span>print</Span>(<Span>num</Span>)
+            </CodeLine>
+          </CodeLine>
           <CodeLine type="response">1</CodeLine>
           <CodeLine type="response">2</CodeLine>
           <CodeLine type="response">...</CodeLine>
@@ -318,112 +396,122 @@ const PythonParagraphs = () => {
         </CodeSection>
       </Paragraph>
       <Paragraph title="8. СИНТАКСИС PYTHON">
-        <TextSubPara>
+        <SubPara>
           Можно заметили, что назначение функций, условий и циклов
           сходится в том, что их содержимое сдвинуто вправо, а после
           названия функции, условия или цикла стоит знак двоеточия (
           <Span type="highlight bold">:</Span>). Если их убрать, то
           Python выдаст ошибку и программа не будет работать:
-        </TextSubPara>
+        </SubPara>
         <CodeSection>
           <CodeLine type="comment"># правильно</CodeLine>
-          <CodeLine>{"def say(str):\n print(str)"}</CodeLine>
+          <CodeLine>
+            <Span>def</Span> <Span>say</Span>(<Span>str</Span>):
+            <CodeLine type="inner">
+              <Span>print</Span>(<Span>str</Span>)
+            </CodeLine>
+          </CodeLine>
           <CodeLine type="comment"># неправильно</CodeLine>
-          <CodeLine>{"def say(str):\n print(str)"}</CodeLine>
+          <CodeLine>
+            <Span>def</Span> <Span>say</Span>(<Span>str</Span>):{" "}
+            <CodeLine type="inner">
+              <Span>print</Span>(<Span>str</Span>)
+            </CodeLine>
+          </CodeLine>
         </CodeSection>
-        <TextSubPara>
+        <SubPara>
           Также видно, что для выполнения функции, после ее названия
           нужно поставить круглые скобки, внутри которых при
           необходимости вставить аргументы. А чтобы написать
           какое-нибудь объяснение, перед ним надо поставить хэштег (
           <Span type="highlight bold">#</Span>), чтобы Python не
           выполнял написаное.
-        </TextSubPara>
-        <TextSubPara>
+        </SubPara>
+        <SubPara>
           Такие детали у каждого языка программирования различаются.
           Лучший способ их запомнить - практиковаться, после недели
           писания на Python, вы научитесь ставить их автоматически.
-        </TextSubPara>
+        </SubPara>
       </Paragraph>
       <Paragraph title="9. ТЕСТИРОВАНИЕ И ДЕБАГ">
-        <TextSubPara>
+        <SubPara>
           Тестирование - это процесс проверки программного обеспечения
           путем его выполнения с различными входными данными и
           наблюдения за выходными.
-        </TextSubPara>
-        <TextSubPara>
+        </SubPara>
+        <SubPara>
           Python предоставляет встроенные библиотеки для помощи в
           тестировании, такие как модуль unittest. Он предоставляет
           классы и методы, которые позволяют легко настраивать
           тестовые случаи и запускать их.
-        </TextSubPara>
-        <TextSubPara>
+        </SubPara>
+        <SubPara>
           Дебаг является еще одним важным аспектом разработки
           программного обеспечения. Это процесс нахождения и
           устранения ошибок или багов в коде.
-        </TextSubPara>
-        <TextSubPara>
+        </SubPara>
+        <SubPara>
           Python предоставляет различные инструменты для упрощения
           отладки кода:
-        </TextSubPara>
-        <TextSubPara>
+        </SubPara>
+        <SubPara>
           1. Один из распространенных инструментов использовать
           операторы print для регистрации значения переменных или
           выходных данных на критических точках в программе
-        </TextSubPara>
-        <TextSubPara>
+        </SubPara>
+        <SubPara>
           2. Еще один инструмент - это использование отладочных
           библиотек, таких как pdb или ipdb, которые позволяют
           приостанавливать выполнение в определенных точках и изучать
           переменные или конкретные компоненты, которые, по вашему
           мнению, могут вызвать проблему.
-        </TextSubPara>
+        </SubPara>
       </Paragraph>
       <Paragraph title="10. БИБЛИОТЕКИ PYTHON">
-        <TextSubPara>
+        <SubPara>
           Python является очень универсальным языком с широким
           спектром стандартных библиотек, доступных для разработчиков.
           Эти библиотеки предоставляют много функциональности, которую
           можно использовать в различных программах. Вот некоторые из
           наиболее полезных на олимпиаде библиотек Python:
-        </TextSubPara>
-        <TextSubPara>
+        </SubPara>
+        <SubPara>
           1. **collections** - Эта библиотека предоставляет
           дополнительные структуры данных, отличные от встроенных. Она
           включает классы, такие как OrderedDict, defaultdict и
           Counter.
-        </TextSubPara>
-        <TextSubPara>
+        </SubPara>
+        <SubPara>
           2. **math** - Эта библиотека предоставляет математические
           функции, такие как тригонометрические функции, логарифмы и
           константы, такие как pi и e.
-        </TextSubPara>
-        <TextSubPara>
+        </SubPara>
+        <SubPara>
           3. **random** - Эта библиотека предоставляет функции для
           генерации случайных чисел. Она позволяет генерировать
           случайные целые числа, числа с плавающей точкой и случайные
           выборки из списков.
-        </TextSubPara>
-        <TextSubPara>
+        </SubPara>
+        <SubPara>
           4. **re** - Эта библиотека предоставляет поддержку
           регулярных выражений. Она позволяет искать и заменять
           шаблоны в строках.
-        </TextSubPara>
-        <TextSubPara>
+        </SubPara>
+        <SubPara>
           Это только некоторые из наиболее популярных стандартных
           библиотек Python. Их существует много других, которые
           предоставляют дополнительную функциональность для работы с
           базами данных, сетями, графикой и многим другим.
-        </TextSubPara>
+        </SubPara>
       </Paragraph>
       <Paragraph title="ЗАКЛЮЧЕНИЕ">
-        <TextSubPara>
+        <SubPara>
           Ну вот и все, на этом пока можно закончить изучение Python.
           Знание этих тем должно хватить для олимпиады, но не стоит
           останавливаться на достигнутом, продолжайте практикаваться и
           развиваться, ведь от этого шансы успеха на олимпиаде только
           увеличатся
-        </TextSubPara>
+        </SubPara>
       </Paragraph>
     </Box>
   );

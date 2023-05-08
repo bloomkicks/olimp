@@ -10,14 +10,29 @@ const CodeSection = ({ children }: { children: React.ReactNode }) => {
         bgcolor: "gray",
         my: "13px",
         color: "code.default",
-        "& > p": {
+        "& > div": {
           mb: "7px",
         },
         "& > .comment": {
           mb: "4px",
         },
-        "& > p:last-child": {
+        "& > div:last-child": {
           mb: 0,
+        },
+        "& .variable": {
+          color: "code.variable",
+        },
+        "& .keyword": {
+          color: "code.keyword",
+        },
+        "& .value": {
+          color: "code.value",
+        },
+        "& .function": {
+          color: "code.function",
+        },
+        "& .comment": {
+          color: "code.comment",
         },
       }}
     >

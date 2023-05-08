@@ -24,12 +24,11 @@ a {
   text-decoration: none;
 }
 
-button,
-button:hover,
-button:focus {
+button {
   outline: none;
   border: none;
   display: "block";
+  background-color: "none";
 }
 
 @media (prefers-color-scheme: dark) {

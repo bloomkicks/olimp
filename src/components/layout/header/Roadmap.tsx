@@ -1,5 +1,6 @@
 import Stack from "@mui/material/Stack";
 import Box from "@mui/material/Box";
+import Link from "next/link";
 
 let links = [
   {
@@ -34,6 +35,9 @@ const Roadmap = () => {
     >
       {links.map((link, i) => (
         <Box
+          component={Link}
+          href={link.href}
+          key={link.title}
           sx={{
             position: "relative",
             alignSelf: i % 2 === 1 ? "flex-end" : "flex-start",
@@ -47,7 +51,6 @@ const Roadmap = () => {
             bgcolor: "white",
             cursor: "pointer",
           }}
-          key={link.title}
         >
           {link.title}
           {i !== 4 && (
@@ -64,6 +67,7 @@ const Roadmap = () => {
                 borderTop: "2px solid black",
                 borderRight: i % 2 === 0 ? "2px solid black" : 0,
                 borderLeft: i % 2 === 0 ? 0 : "2px solid black",
+                pointerEvents: "none",
               }}
             ></Box>
           )}

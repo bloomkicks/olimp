@@ -1,4 +1,5 @@
 import Typography from "@mui/material/Typography";
+import Box from "@mui/material/Box";
 
 const CodeLine = ({
   children,
@@ -10,25 +11,38 @@ const CodeLine = ({
   type?: string;
 }) => {
   return (
-    <Typography
+    <Box
       className={type}
       sx={{
         opacity: type === "comment" || type === "response" ? 0.6 : 1,
         mx: type === "centered" ? "auto !important" : "",
-        width: 'fit-content'
+        pl: type === "inner" ? 3.5 : 0,
+        width: "fit-content",
       }}
     >
-      {!["no-console", "centered", "print"].includes(type || "") && (
+      {!["no-console", "centered", "print", "inner"].includes(
+        type || ""
+      ) && (
         <Typography
           component="span"
           variant="inherit"
-          sx={{ opacity: "0.6" }}
+          sx={{ opacity: 0.6 }}
         >
           {"> "}
         </Typography>
       )}
       {children}
-    </Typography>
+      {comment && (
+        <Typography
+          component="span"
+          display="inline"
+          ml={1.5}
+          sx={{ opacity: 0.6 }}
+        >
+          {comment}
+        </Typography>
+      )}
+    </Box>
   );
 };
 

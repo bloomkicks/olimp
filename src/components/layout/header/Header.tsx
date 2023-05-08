@@ -1,9 +1,11 @@
+import Link from "next/link";
 import NavMenu from "./NavMenu";
 import { useState } from "react";
 import Image from "next/image";
 import MenuSetter from "./MenuSetter";
 import Toolbar from "@mui/material/Toolbar";
 import AppBar from "@mui/material/AppBar";
+import Box from "@mui/material/Box";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -32,14 +34,22 @@ const Header = () => {
           px: 3.5,
         }}
       >
-        <Image
-          unoptimized
-          src="./long-logo.png"
-          alt="ОЛИМП"
-          width={149.5}
-          height={42.5}
-          style={{ position: "relative", bottom: 3 }}
-        />
+        <Box
+          component={Link}
+          href="/main"
+          sx={{
+            position: "relative",
+            bottom: 3,
+          }}
+        >
+          <Image
+            unoptimized
+            src="./long-logo.png"
+            alt="ОЛИМП"
+            width={149.5}
+            height={42.5}
+          />
+        </Box>
         <MenuSetter onClick={setMenuHandler} isCross={isMenuOpen} />
         <NavMenu open={isMenuOpen} onClose={setMenuHandler} />
       </Toolbar>
