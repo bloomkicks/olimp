@@ -20,6 +20,7 @@ const MenuSetter = ({
         bgcolor: "transparent",
         transition: "transform 0.1s ease-out",
         cursor: "pointer",
+        userSelect: "none",
         "&:hover, &:focus-visible": {
           transform: "scaleX(1.1)",
         },
