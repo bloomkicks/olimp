@@ -54,6 +54,7 @@ const Roadmap = () => {
             bgcolor: "white",
             cursor: "pointer",
             color: router.pathname === link.href ? "primary.main" : "black",
+            textDecoration: "none",
           }}
         >
           {link.title}

@@ -13,14 +13,12 @@ const MenuSetter = ({
     <Box
       component="button"
       onClick={onClick}
-      onTouchEnd={onClick}
       sx={{
         display: "block",
         p: "3px",
-        bgcolor: "transparent",
+        bgcolor: "white",
         transition: "transform 0.1s ease-out",
         cursor: "pointer",
-        userSelect: "none",
         "&:hover, &:focus-visible": {
           transform: "scaleX(1.1)",
         },
@@ -34,6 +32,7 @@ const MenuSetter = ({
             bgcolor: color,
             mb: i === 2 ? 0 : "5px",
             transition: "transform 0.4s ease-out",
+            userSelect: "none",
             transform: isCross
               ? i == 0
                 ? "translateY(10px) rotate(45deg)"
