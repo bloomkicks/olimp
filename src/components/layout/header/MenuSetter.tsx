@@ -15,7 +15,7 @@ const MenuSetter = ({
       onClick={onClick}
       onTouchEnd={onClick}
       sx={{
-        minWidth: 40,
+        display: "block",
         p: "3px",
         bgcolor: "transparent",
         transition: "transform 0.1s ease-out",
