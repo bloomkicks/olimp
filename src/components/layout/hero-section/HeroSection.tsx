@@ -14,7 +14,9 @@ const HeroSection = ({
   planPoints,
   planTitle,
   illustration,
-}: HeroProps) => {
+  noPlan,
+  sx,
+}: HeroProps & { noPlan?: boolean; sx?: any }) => {
   return (
     <Box component="article">
       <Box
@@ -24,6 +26,7 @@ const HeroSection = ({
         position="relative"
         mt={7.5}
         mb={6}
+        sx={sx || {}}
       >
         <Typography
           variant="h1"
@@ -46,10 +49,9 @@ const HeroSection = ({
         />
       </Box>
       <Description title={descTitle} text={description} />
-      <Plan
-        title={planTitle || "ОБЛАСТИ ОБУЧЕНИЯ"}
-        points={planPoints}
-      />
+      {!noPlan && (
+        <Plan title={planTitle || "ПЛАН ОБУЧЕНИЯ"} points={planPoints!} />
+      )}
       <HeroDivider />
     </Box>
   );

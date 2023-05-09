@@ -17,7 +17,7 @@ const Header = () => {
   return (
     <AppBar
       sx={{
-        bgcolor: "#F2ECFF",
+        bgcolor: "#FFFFFF",
         alignItems: "center",
         height: "68px",
         position: "fixed",
@@ -39,7 +39,7 @@ const Header = () => {
           href="/main"
           sx={{
             position: "relative",
-            bottom: 3,
+            bottom: 2,
           }}
         >
           <Image

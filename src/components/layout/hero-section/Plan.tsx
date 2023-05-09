@@ -2,13 +2,7 @@ import Typography from "@mui/material/Typography";
 import Stack from "@mui/material/Stack";
 import Box from "@mui/material/Box";
 
-const Plan = ({
-  title,
-  points,
-}: {
-  title?: string;
-  points: string[];
-}) => {
+const Plan = ({ title, points }: { title?: string; points: string[] }) => {
   return (
     <Box component="section" textAlign="center">
       <Typography variant="h2" mb={2}>

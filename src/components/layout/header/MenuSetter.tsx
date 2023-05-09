@@ -13,7 +13,9 @@ const MenuSetter = ({
     <Box
       component="button"
       onClick={onClick}
+      onTouchEnd={onClick}
       sx={{
+        minWidth: 40,
         p: "3px",
         bgcolor: "transparent",
         transition: "transform 0.1s ease-out",
@@ -33,9 +35,9 @@ const MenuSetter = ({
             transition: "transform 0.4s ease-out",
             transform: isCross
               ? i == 0
-                ? "rotate(45deg) translateY(300%)"
+                ? "translateY(10px) rotate(45deg)"
                 : i == 2
-                ? "rotate(-45deg) translateY(-300%)"
+                ? "translateY(-10px) rotate(-45deg)"
                 : "translateX(100px)"
               : "",
           }}

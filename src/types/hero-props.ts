@@ -8,7 +8,7 @@ export type HeroProps = {
   heading: string;
   descTitle: string;
   description: string;
-  planPoints: string[];
+  planPoints?: string[];
   planTitle?: string;
   illustration: HeroIllustrationProps;
 };

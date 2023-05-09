@@ -20,14 +20,8 @@ const CodeLine = ({
         width: "fit-content",
       }}
     >
-      {!["no-console", "centered", "print", "inner"].includes(
-        type || ""
-      ) && (
-        <Typography
-          component="span"
-          variant="inherit"
-          sx={{ opacity: 0.6 }}
-        >
+      {!["no-console", "centered", "print", "inner"].includes(type || "") && (
+        <Typography component="span" variant="inherit" sx={{ opacity: 0.6 }}>
           {"> "}
         </Typography>
       )}

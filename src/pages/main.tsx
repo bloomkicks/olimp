@@ -8,6 +8,6 @@ const MainPage = () => {
       <MainParagraphs />
     </>
   );
-}
+};
 
-export default MainPage
+export default MainPage;

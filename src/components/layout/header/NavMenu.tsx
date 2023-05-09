@@ -4,13 +4,7 @@ import Paper from "@mui/material/Paper";
 import Box from "@mui/material/Box";
 import Drawer from "@mui/material/Drawer";
 
-const NavMenu = ({
-  open,
-  onClose,
-}: {
-  open: boolean;
-  onClose: () => void;
-}) => {
+const NavMenu = ({ open, onClose }: { open: boolean; onClose: () => void }) => {
   return (
     <Drawer
       open={open}
@@ -33,7 +27,7 @@ const NavMenu = ({
           width: "100%",
           height: "100%",
           pt: 8,
-          pl: '5px'
+          pl: "5px",
         }}
         onClick={onClose}
       >

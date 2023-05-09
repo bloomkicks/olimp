@@ -23,7 +23,7 @@ const PythonHero = () => {
       ]}
       illustration={{
         imgSrc: "./illustrations/python/hero-illustration.png",
-        sx: {},
+        sx: { py: 2 },
         alt: "",
       }}
     />

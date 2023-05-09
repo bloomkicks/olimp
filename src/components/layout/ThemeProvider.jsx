@@ -1,8 +1,5 @@
 import CssBaseline from "@mui/material/CssBaseline";
-import {
-  createTheme,
-  ThemeProvider as Provider,
-} from "@mui/material/styles";
+import { createTheme, ThemeProvider as Provider } from "@mui/material/styles";
 
 const heroFontFam = "Manrope, sans-serif";
 const headingFontFam = "Inter, sans-serif";

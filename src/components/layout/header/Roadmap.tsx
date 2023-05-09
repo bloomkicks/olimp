@@ -1,3 +1,4 @@
+import { useRouter } from "next/router";
 import Stack from "@mui/material/Stack";
 import Box from "@mui/material/Box";
 import Link from "next/link";
@@ -9,23 +10,25 @@ let links = [
   },
   {
     title: "Алгоритмы и структуры данных",
-    href: "#",
+    href: "/algorithms",
   },
   {
     title: "Разборы задач и практика",
-    href: "#",
+    href: "/practice",
   },
   {
-    title: "Полезные советы",
-    href: "#",
+    title: "Компьютерные науки и математика",
+    href: "/science",
   },
   {
-    title: "Дальнейшее изучение",
-    href: "#",
+    title: "Советы от победителей",
+    href: "/advice",
   },
 ];
 
 const Roadmap = () => {
+  const router = useRouter();
+
   return (
     <Stack
       id="roadmap"
@@ -50,6 +53,7 @@ const Roadmap = () => {
             border: "1px solid black",
             bgcolor: "white",
             cursor: "pointer",
+            color: router.pathname === link.href ? "primary.main" : "black",
           }}
         >
           {link.title}
@@ -60,7 +64,7 @@ const Roadmap = () => {
                 left: i % 2 === 0 ? "100%" : "",
                 right: i % 2 === 0 ? "" : "100%",
                 top: "50%",
-                width: i === 3 ? "55%" : "19%",
+                width: "19%",
                 height: 50,
                 borderTopRightRadius: i % 2 === 0 ? "13px" : 0,
                 borderTopLeftRadius: i % 2 === 0 ? 0 : "13px",

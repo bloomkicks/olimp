@@ -1,16 +1,7 @@
 function getTextSpanType(text: string): string {
   let type = "";
   if (
-    [
-      "return",
-      "if",
-      "pass",
-      "def",
-      "else",
-      "while",
-      "for",
-      "in",
-    ].includes(text)
+    ["return", "if", "pass", "def", "else", "while", "for", "in"].includes(text)
   ) {
     type = "keyword";
   } else if (
@@ -19,9 +10,7 @@ function getTextSpanType(text: string): string {
     text[0] === '"'
   ) {
     type = "value";
-  } else if (
-    ["sum", "print", "yell", "upper", "range", "say"].includes(text)
-  ) {
+  } else if (["sum", "print", "yell", "upper", "range", "say"].includes(text)) {
     type = "function";
   } else if (text[0] === "#") {
     type = "comment";

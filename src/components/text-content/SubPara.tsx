@@ -18,11 +18,7 @@ const SubPara = ({
   return (
     <Box
       component={
-        type === "ordered-list"
-          ? "ol"
-          : type === "bullet-list"
-          ? "ul"
-          : "div"
+        type === "ordered-list" ? "ol" : type === "bullet-list" ? "ul" : "div"
       }
       sx={{
         "& a": { color: "primary.main", textDecoration: "underline" },
