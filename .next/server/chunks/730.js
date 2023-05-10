@@ -21,9 +21,10 @@ exports.modules = {
 
 
 
-const Paragraph = ({ title , children  })=>{
+const Paragraph = ({ title , children , id =""  })=>{
     return /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)((_mui_material_Box__WEBPACK_IMPORTED_MODULE_2___default()), {
         component: "article",
+        id: id,
         mb: "30px",
         px: 3.5,
         minWidth: 340,

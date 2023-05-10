@@ -5,13 +5,16 @@ import React from "react";
 const Paragraph = ({
   title,
   children,
+  id = "",
 }: {
   title: string;
   children: React.ReactNode;
+  id?: string;
 }) => {
   return (
     <Box
       component="article"
+      id={id}
       mb="30px"
       px={3.5}
       minWidth={340}

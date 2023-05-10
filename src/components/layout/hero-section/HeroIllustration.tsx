@@ -7,7 +7,13 @@ const HeroIllustration = ({ imgSrc, alt, sx }: HeroIllustrationProps) => {
       component="img"
       src={imgSrc}
       alt={alt || ""}
-      sx={{ width: "100%", maxWidth: 500, ...sx }}
+      sx={{
+        width: "calc(100% + 48px)",
+        flexShrink: { xs: 0, md: 1 },
+        maxWidth: 500,
+        borderRight: { md: "1px solid #BBBBBB" },
+        ...sx,
+      }}
     ></Box>
   );
 };

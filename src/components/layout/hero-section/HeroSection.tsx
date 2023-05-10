@@ -1,6 +1,7 @@
 import type { HeroProps } from "@/types/hero-props";
 import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
+import Stack from "@mui/material/Stack";
 
 import HeroDivider from "./HeroDivider";
 import HeroIllustration from "./HeroIllustration";
@@ -19,36 +20,47 @@ const HeroSection = ({
 }: HeroProps & { noPlan?: boolean; sx?: any }) => {
   return (
     <Box component="article">
-      <Box
-        display="flex"
-        alignItems="center"
+      <Stack
+        direction={{ xs: "column", md: "row" }}
         justifyContent="center"
-        position="relative"
-        mt={7.5}
-        mb={6}
-        sx={sx || {}}
+        alignItems="center"
       >
-        <Typography
-          variant="h1"
-          textAlign="center"
+        <Box
+          display="flex"
+          alignItems="center"
+          justifyContent="center"
+          position="relative"
+          mt={7.5}
+          mb={6}
           sx={{
-            position: "absolute",
-            top: "58%",
-            left: "50%",
-            transform: "translate(-50%, -50%)",
             width: "100%",
-            px: 3,
+            maxHeight: 300,
+            maxWidth: 600,
+            aspectRatio: (illustration.width / illustration.height + "").slice(
+              0,
+              4
+            ),
+            ...(sx || {}),
           }}
         >
-          {heading}
-        </Typography>
-        <HeroIllustration
-          imgSrc={illustration.imgSrc}
-          alt={illustration.alt}
-          sx={illustration.sx}
-        />
-      </Box>
-      <Description title={descTitle} text={description} />
+          <Typography
+            variant="h1"
+            textAlign="center"
+            sx={{
+              position: "absolute",
+              top: "58%",
+              left: "50%",
+              transform: "translate(-50%, -50%)",
+              width: "100%",
+              px: 3,
+            }}
+          >
+            {heading}
+          </Typography>
+          <HeroIllustration {...illustration} />
+        </Box>
+        <Description title={descTitle} text={description} />
+      </Stack>
       {!noPlan && (
         <Plan title={planTitle || "ПЛАН ОБУЧЕНИЯ"} points={planPoints!} />
       )}

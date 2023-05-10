@@ -21,12 +21,12 @@ const Header = () => {
         alignItems: "center",
         height: "68px",
         position: "fixed",
-        zIndex: 100,
       }}
     >
       <Toolbar
         sx={{
           width: "100%",
+          zIndex: 100,
           height: "100%",
           maxWidth: "1366px",
           justifyContent: "space-between",
@@ -51,8 +51,8 @@ const Header = () => {
           />
         </Box>
         <MenuSetter onClick={setMenuHandler} isCross={isMenuOpen} />
-        <NavMenu open={isMenuOpen} onClose={setMenuHandler} />
       </Toolbar>
+      <NavMenu open={isMenuOpen} onClose={setMenuHandler} />
     </AppBar>
   );
 };

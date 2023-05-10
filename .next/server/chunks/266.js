@@ -20,6 +20,9 @@ var Typography_default = /*#__PURE__*/__webpack_require__.n(Typography_);
 // EXTERNAL MODULE: external "@mui/material/Box"
 var Box_ = __webpack_require__(19);
 var Box_default = /*#__PURE__*/__webpack_require__.n(Box_);
+// EXTERNAL MODULE: external "@mui/material/Stack"
+var Stack_ = __webpack_require__(8742);
+var Stack_default = /*#__PURE__*/__webpack_require__.n(Stack_);
 // EXTERNAL MODULE: external "@mui/material/Divider"
 var Divider_ = __webpack_require__(3646);
 var Divider_default = /*#__PURE__*/__webpack_require__.n(Divider_);
@@ -48,8 +51,15 @@ const HeroIllustration = ({ imgSrc , alt , sx  })=>{
         src: imgSrc,
         alt: alt || "",
         sx: {
-            width: "100%",
+            width: "calc(100% + 48px)",
+            flexShrink: {
+                xs: 0,
+                md: 1
+            },
             maxWidth: 500,
+            borderRight: {
+                md: "1px solid #BBBBBB"
+            },
             ...sx
         }
     });
@@ -63,10 +73,18 @@ const HeroIllustration = ({ imgSrc , alt , sx  })=>{
 const Description = ({ title , text  })=>{
     return /*#__PURE__*/ (0,jsx_runtime_.jsxs)((Box_default()), {
         mb: 6,
-        style: {
-            textAlign: "center"
+        sx: {
+            textAlign: {
+                xs: "center",
+                md: "left"
+            },
+            maxWidth: 700,
+            width: "100%"
         },
         px: 3.5,
+        pt: {
+            md: 8
+        },
         children: [
             /*#__PURE__*/ jsx_runtime_.jsx((Typography_default()), {
                 variant: "h2",
@@ -82,18 +100,22 @@ const Description = ({ title , text  })=>{
 };
 /* harmony default export */ const hero_section_Description = (Description);
 
-// EXTERNAL MODULE: external "@mui/material/Stack"
-var Stack_ = __webpack_require__(8742);
-var Stack_default = /*#__PURE__*/__webpack_require__.n(Stack_);
+// EXTERNAL MODULE: ./node_modules/next/link.js
+var next_link = __webpack_require__(1664);
+var link_default = /*#__PURE__*/__webpack_require__.n(next_link);
 ;// CONCATENATED MODULE: ./src/components/layout/hero-section/Plan.tsx
 
 
 
 
+
 const Plan = ({ title , points  })=>{
+    const isWrap = points.length > 6;
+    const isLongWrap = points.length > 12;
     return /*#__PURE__*/ (0,jsx_runtime_.jsxs)((Box_default()), {
         component: "section",
         textAlign: "center",
+        width: "100%",
         children: [
             /*#__PURE__*/ jsx_runtime_.jsx((Typography_default()), {
                 variant: "h2",
@@ -101,18 +123,39 @@ const Plan = ({ title , points  })=>{
                 children: title || "ПЛАН ОБУЧЕНИЯ"
             }),
             /*#__PURE__*/ jsx_runtime_.jsx((Stack_default()), {
-                display: "inline-flex",
+                display: "flex",
+                width: isWrap ? {
+                    xs: "100%",
+                    md: "90%",
+                    lg: "80%",
+                    xl: "75%"
+                } : "fit-content",
                 alignItems: "flex-start",
                 justifyContent: "flex-start",
+                flexWrap: {
+                    md: "wrap"
+                },
+                maxHeight: {
+                    md: isLongWrap ? 400 : 300
+                },
                 mx: "auto",
                 spacing: 1.25,
                 textAlign: "left",
                 px: 4,
                 minWidth: 340,
                 children: points.map((point, i)=>/*#__PURE__*/ jsx_runtime_.jsx((Typography_default()), {
+                        component: point.href ? (link_default()) : "p",
+                        href: point.href || "",
+                        sx: {
+                            textDecoration: point.href ? "underline" : "none"
+                        },
                         variant: "subtitle1",
-                        children: `${i + 1}. ${point}`
-                    }, i + point))
+                        width: {
+                            md: isWrap ? "49%" : "auto",
+                            maxWidth: "fit-content"
+                        },
+                        children: `${i + 1}. ${point.title}`
+                    }, i + point.title))
             })
         ]
     });
@@ -127,42 +170,57 @@ const Plan = ({ title , points  })=>{
 
 
 
+
 const HeroSection = ({ heading , descTitle , description , planPoints , planTitle , illustration , noPlan , sx  })=>{
     return /*#__PURE__*/ (0,jsx_runtime_.jsxs)((Box_default()), {
         component: "article",
         children: [
-            /*#__PURE__*/ (0,jsx_runtime_.jsxs)((Box_default()), {
-                display: "flex",
-                alignItems: "center",
+            /*#__PURE__*/ (0,jsx_runtime_.jsxs)((Stack_default()), {
+                direction: {
+                    xs: "column",
+                    md: "row"
+                },
                 justifyContent: "center",
-                position: "relative",
-                mt: 7.5,
-                mb: 6,
-                sx: sx || {},
+                alignItems: "center",
                 children: [
-                    /*#__PURE__*/ jsx_runtime_.jsx((Typography_default()), {
-                        variant: "h1",
-                        textAlign: "center",
+                    /*#__PURE__*/ (0,jsx_runtime_.jsxs)((Box_default()), {
+                        display: "flex",
+                        alignItems: "center",
+                        justifyContent: "center",
+                        position: "relative",
+                        mt: 7.5,
+                        mb: 6,
                         sx: {
-                            position: "absolute",
-                            top: "58%",
-                            left: "50%",
-                            transform: "translate(-50%, -50%)",
                             width: "100%",
-                            px: 3
+                            maxHeight: 300,
+                            maxWidth: 600,
+                            aspectRatio: (illustration.width / illustration.height + "").slice(0, 4),
+                            ...sx || {}
                         },
-                        children: heading
+                        children: [
+                            /*#__PURE__*/ jsx_runtime_.jsx((Typography_default()), {
+                                variant: "h1",
+                                textAlign: "center",
+                                sx: {
+                                    position: "absolute",
+                                    top: "58%",
+                                    left: "50%",
+                                    transform: "translate(-50%, -50%)",
+                                    width: "100%",
+                                    px: 3
+                                },
+                                children: heading
+                            }),
+                            /*#__PURE__*/ jsx_runtime_.jsx(hero_section_HeroIllustration, {
+                                ...illustration
+                            })
+                        ]
                     }),
-                    /*#__PURE__*/ jsx_runtime_.jsx(hero_section_HeroIllustration, {
-                        imgSrc: illustration.imgSrc,
-                        alt: illustration.alt,
-                        sx: illustration.sx
+                    /*#__PURE__*/ jsx_runtime_.jsx(hero_section_Description, {
+                        title: descTitle,
+                        text: description
                     })
                 ]
-            }),
-            /*#__PURE__*/ jsx_runtime_.jsx(hero_section_Description, {
-                title: descTitle,
-                text: description
             }),
             !noPlan && /*#__PURE__*/ jsx_runtime_.jsx(hero_section_Plan, {
                 title: planTitle || "ПЛАН ОБУЧЕНИЯ",

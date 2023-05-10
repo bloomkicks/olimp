@@ -38,7 +38,11 @@ const MenuSetter = ({
                 ? "translateY(10px) rotate(45deg)"
                 : i == 2
                 ? "translateY(-10px) rotate(-45deg)"
-                : "translateX(100px)"
+                : {
+                    xs: "translateX(100px)",
+                    lg: "translateX(200px)",
+                    xl: "translateX(500px)",
+                  }
               : "",
           }}
           key={"bar" + color}

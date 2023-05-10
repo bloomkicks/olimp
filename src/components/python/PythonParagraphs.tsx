@@ -8,7 +8,7 @@ import CodeLine from "../text-content/CodeLine";
 const PythonParagraphs = () => {
   return (
     <Box>
-      <Paragraph title="ОСНОВНЫЕ УЧЕБНЫЕ РЕСУРСЫ">
+      <Paragraph title="ОСНОВНЫЕ УЧЕБНЫЕ РЕСУРСЫ" id="resources">
         <SubPara>
           В интернете существует много различных курсов по изучению языка
           Python, но некоторые из них сосредоточены на ненужных нам темах. Что
@@ -36,7 +36,7 @@ const PythonParagraphs = () => {
           курсов, у вас сложится ясная картина
         </SubPara>
       </Paragraph>
-      <Paragraph title="1. УСТАНОВКА PYTHON И IDE">
+      <Paragraph title="1. УСТАНОВКА PYTHON И IDE" id="installation">
         <SubPara>
           Лучший способ учения - практика. Именно поэтому первым делом мы
           скачаем Python и приложение для работы с ним.
@@ -70,7 +70,7 @@ const PythonParagraphs = () => {
           <CodeLine type="response">12</CodeLine>
         </CodeSection>
       </Paragraph>
-      <Paragraph title="2. НАЗНАЧЕНИЕ ПЕРЕМЕННЫХ">
+      <Paragraph title="2. НАЗНАЧЕНИЕ ПЕРЕМЕННЫХ" id="variables">
         <SubPara>
           Переменные в программировании - тоже самое, что и в математике. Только
           вместо <Span type="var-red">x</Span> или <Span type="var-red">y</Span>
@@ -89,7 +89,7 @@ const PythonParagraphs = () => {
         </CodeSection>
         <SubPara>Вроде бы все прямолинейно, но что это за кавычки?</SubPara>
       </Paragraph>
-      <Paragraph title="3. БАЗОВЫЕ ТИПЫ ДАННЫХ">
+      <Paragraph title="3. БАЗОВЫЕ ТИПЫ ДАННЫХ" id="data-types">
         <SubPara>
           Дело в том, что переменная может принимать разные значения - строки,
           числа, символы и многое другое. Чтобы отличать тип строк от других,
@@ -135,7 +135,7 @@ const PythonParagraphs = () => {
           </CodeLine>
         </CodeSection>
       </Paragraph>
-      <Paragraph title="4. МАТЕМАТИЧЕСКИЕ ОПЕРАТОРЫ">
+      <Paragraph title="4. МАТЕМАТИЧЕСКИЕ ОПЕРАТОРЫ" id="arithmetic-operations">
         <SubPara>
           Но что нам делать с этими переменными? Всё что угодно, мы можем их
           складывать, умножать, делить, вычитать, проводидить над ними множество
@@ -171,7 +171,7 @@ const PythonParagraphs = () => {
           <Span type="highlight bold">/</Span> - деление
         </SubPara>
       </Paragraph>
-      <Paragraph title="5. ПРОЦЕДУРЫ И ФУНКЦИИ">
+      <Paragraph title="5. ПРОЦЕДУРЫ И ФУНКЦИИ" id="functions">
         <SubPara>
           Начнем с понятия операции. Операция - это простая команда компьютеру.
           Он выполняет команду и, если надо, выдает ответ. Например, операцией
@@ -250,7 +250,7 @@ const PythonParagraphs = () => {
           </CodeLine>
         </CodeSection>
       </Paragraph>
-      <Paragraph title="6. ОПЕРАТОРЫ УСЛОВИЯ">
+      <Paragraph title="6. ОПЕРАТОРЫ УСЛОВИЯ" id="conditions">
         <SubPara>
           Чтобы воплощать в программе более сложную логику нам нужны операторы
           условия. Например, если нам нужно проверить возраст пользователя и
@@ -318,7 +318,7 @@ const PythonParagraphs = () => {
           </CodeLine>
         </CodeSection>
       </Paragraph>
-      <Paragraph title="7. ОПЕРАТОРЫ ЦИКЛА">
+      <Paragraph title="7. ОПЕРАТОРЫ ЦИКЛА" id="cycles">
         <SubPara>
           Также в любом языке программирования нам нужны операторы цикла. Они
           отвечают за случаи, когда нам надо повторять операцию множество раз.
@@ -371,7 +371,7 @@ const PythonParagraphs = () => {
           <CodeLine type="response">100</CodeLine>
         </CodeSection>
       </Paragraph>
-      <Paragraph title="8. СИНТАКСИС PYTHON">
+      <Paragraph title="8. СИНТАКСИС PYTHON" id="syntax">
         <SubPara>
           Можно заметили, что назначение функций, условий и циклов сходится в
           том, что их содержимое сдвинуто вправо, а после названия функции,
@@ -408,7 +408,7 @@ const PythonParagraphs = () => {
           вы научитесь ставить их автоматически.
         </SubPara>
       </Paragraph>
-      <Paragraph title="9. ТЕСТИРОВАНИЕ И ДЕБАГ">
+      <Paragraph title="9. ТЕСТИРОВАНИЕ И ДЕБАГ" id="testing">
         <SubPara>
           Тестирование - это процесс проверки программного обеспечения путем его
           выполнения с различными входными данными и наблюдения за выходными.
@@ -438,7 +438,7 @@ const PythonParagraphs = () => {
           которые, по вашему мнению, могут вызвать проблему.
         </SubPara>
       </Paragraph>
-      <Paragraph title="10. БИБЛИОТЕКИ PYTHON">
+      <Paragraph title="10. БИБЛИОТЕКИ PYTHON" id="libraries">
         <SubPara>
           Python является очень универсальным языком с широким спектром
           стандартных библиотек, доступных для разработчиков. Эти библиотеки

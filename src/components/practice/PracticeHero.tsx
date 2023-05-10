@@ -9,6 +9,8 @@ const PracticeHero = () => {
       noPlan
       illustration={{
         imgSrc: "./illustrations/practice/hero-illustration.png",
+        width: 412,
+        height: 248,
         sx: { opacity: 1, mb: -1 },
         alt: "",
       }}

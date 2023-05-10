@@ -9,14 +9,14 @@ const NavMenu = ({ open, onClose }: { open: boolean; onClose: () => void }) => {
     <Drawer
       open={open}
       onClose={onClose}
-      hideBackdrop
       keepMounted
       anchor="right"
       sx={{
-        zIndex: 80,
+        zIndex: 78,
         "& .MuiPaper-root": {
-          width: "100%",
+          width: { xs: "100%", md: 500 },
           zIndex: 79,
+          borderLeft: "none",
         },
       }}
     >

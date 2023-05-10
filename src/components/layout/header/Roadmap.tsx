@@ -34,7 +34,12 @@ const Roadmap = () => {
       id="roadmap"
       alignItems="center"
       spacing={1.5}
-      sx={{ maxWidth: 350, mx: "auto", mt: 8 }}
+      sx={{
+        maxWidth: { xs: 350, md: 300 },
+        mx: "auto",
+        mt: 8,
+        width: "95%",
+      }}
     >
       {links.map((link, i) => (
         <Box
@@ -43,10 +48,11 @@ const Roadmap = () => {
           key={link.title}
           sx={{
             position: "relative",
+            width: "100%",
             alignSelf: i % 2 === 1 ? "flex-end" : "flex-start",
             px: 2,
             py: 1.25,
-            maxWidth: 250,
+            maxWidth: { xs: 250, md: "none" },
             fontSize: "16px",
             textAlign: "center",
             borderRadius: "10px",
@@ -65,11 +71,14 @@ const Roadmap = () => {
                 left: i % 2 === 0 ? "100%" : "",
                 right: i % 2 === 0 ? "" : "100%",
                 top: "50%",
-                width: "19%",
-                height: 50,
+                width: { xs: "19%", md: 35 },
+                height: { xs: 50, md: 58 },
                 borderTopRightRadius: i % 2 === 0 ? "13px" : 0,
                 borderTopLeftRadius: i % 2 === 0 ? 0 : "13px",
+                borderBottomLeftRadius: i % 2 === 0 ? 0 : { md: "13px" },
+                borderBottomRightRadius: i % 2 === 1 ? 0 : { md: "13px" },
                 borderTop: "2px solid black",
+                borderBottom: { md: "2px solid black" },
                 borderRight: i % 2 === 0 ? "2px solid black" : 0,
                 borderLeft: i % 2 === 0 ? 0 : "2px solid black",
                 pointerEvents: "none",

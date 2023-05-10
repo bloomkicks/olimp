@@ -4,7 +4,7 @@ exports.id = 888;
 exports.ids = [888];
 exports.modules = {
 
-/***/ 1375:
+/***/ 3517:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -18,6 +18,133 @@ __webpack_require__.d(__webpack_exports__, {
 
 // EXTERNAL MODULE: external "react/jsx-runtime"
 var jsx_runtime_ = __webpack_require__(997);
+// EXTERNAL MODULE: external "@mui/material/Button"
+var Button_ = __webpack_require__(3819);
+var Button_default = /*#__PURE__*/__webpack_require__.n(Button_);
+// EXTERNAL MODULE: external "@mui/material/Box"
+var Box_ = __webpack_require__(19);
+var Box_default = /*#__PURE__*/__webpack_require__.n(Box_);
+// EXTERNAL MODULE: external "react"
+var external_react_ = __webpack_require__(6689);
+;// CONCATENATED MODULE: ./src/components/layout/UpButton.tsx
+
+
+
+
+const UpButton = ({ sx  })=>{
+    const [isVisible, setIsVisible] = (0,external_react_.useState)(false);
+    (0,external_react_.useEffect)(()=>{
+        window.addEventListener("scroll", ()=>{
+            if (window.scrollY >= 300) {
+                setIsVisible(true);
+            } else {
+                setIsVisible(false);
+            }
+        }), [];
+    });
+    function clickHandler() {
+        document.documentElement.scrollTo({
+            top: 0,
+            left: 0,
+            behavior: "smooth"
+        });
+    }
+    return /*#__PURE__*/ jsx_runtime_.jsx((Button_default()), {
+        onClick: clickHandler,
+        color: "inherit",
+        centerRipple: true,
+        sx: {
+            borderRadius: "100px",
+            width: {
+                xs: 57.5,
+                md: 70
+            },
+            height: {
+                xs: 57.5,
+                md: 70
+            },
+            minWidth: 57.5,
+            position: "fixed",
+            right: {
+                xs: 30,
+                md: 70,
+                lg: 80
+            },
+            bottom: {
+                xs: 35,
+                md: 40,
+                lg: 50
+            },
+            opacity: isVisible ? {
+                xs: 0.925,
+                md: 1
+            } : 0,
+            justifyContent: "center",
+            alignItems: "center",
+            bgcolor: "rgb(210, 210, 210)",
+            boxShadow: "1px 2px 4px rgba(0,0,0,0.25)",
+            transition: "opacity 350ms ease-out",
+            "&:hover, &:focus-visible, &.Mui-focused": {
+                bgcolor: "rgb(200, 200, 200)"
+            },
+            zIndex: 200,
+            ...sx
+        },
+        children: /*#__PURE__*/ jsx_runtime_.jsx((Box_default()), {
+            component: "img",
+            src: "./general/up-arrow.svg",
+            alt: "Наверх",
+            width: "80%",
+            height: "80%",
+            sx: {
+                transform: "translateY(-4%)"
+            }
+        })
+    });
+};
+/* harmony default export */ const layout_UpButton = (UpButton);
+
+;// CONCATENATED MODULE: external "@mui/material/LinearProgress"
+const LinearProgress_namespaceObject = require("@mui/material/LinearProgress");
+var LinearProgress_default = /*#__PURE__*/__webpack_require__.n(LinearProgress_namespaceObject);
+;// CONCATENATED MODULE: ./src/components/layout/ProgressBar.tsx
+
+
+
+const ProgressBar = ()=>{
+    const [progress, setProgress] = (0,external_react_.useState)(0);
+    (0,external_react_.useEffect)(()=>{
+        function scrollHandler(e) {
+            const docHeight = document.documentElement.scrollHeight;
+            const viewHeight = window.innerHeight;
+            const scroll = window.scrollY;
+            const progressVal = Math.ceil(scroll / (docHeight - viewHeight) * 100);
+            if (progress !== progressVal) {
+                setProgress(Math.ceil(progressVal));
+            }
+        }
+        document.addEventListener("scroll", scrollHandler);
+        window.addEventListener("resize", scrollHandler);
+    }, []);
+    return /*#__PURE__*/ jsx_runtime_.jsx((LinearProgress_default()), {
+        variant: "determinate",
+        color: "primary",
+        value: progress,
+        sx: {
+            position: "fixed",
+            zIndex: 81,
+            bottom: 0,
+            left: 0,
+            height: 10,
+            width: "100%",
+            "& .MuiLinearProgress-bar": {
+                transition: "transform 300ms linear"
+            }
+        }
+    });
+};
+/* harmony default export */ const layout_ProgressBar = (ProgressBar);
+
 // EXTERNAL MODULE: ./node_modules/next/link.js
 var next_link = __webpack_require__(1664);
 var link_default = /*#__PURE__*/__webpack_require__.n(next_link);
@@ -26,9 +153,6 @@ const router_namespaceObject = require("next/router");
 // EXTERNAL MODULE: external "@mui/material/Stack"
 var Stack_ = __webpack_require__(8742);
 var Stack_default = /*#__PURE__*/__webpack_require__.n(Stack_);
-// EXTERNAL MODULE: external "@mui/material/Box"
-var Box_ = __webpack_require__(19);
-var Box_default = /*#__PURE__*/__webpack_require__.n(Box_);
 ;// CONCATENATED MODULE: ./src/components/layout/header/Roadmap.tsx
 
 
@@ -64,19 +188,27 @@ const Roadmap = ()=>{
         alignItems: "center",
         spacing: 1.5,
         sx: {
-            maxWidth: 350,
+            maxWidth: {
+                xs: 350,
+                md: 300
+            },
             mx: "auto",
-            mt: 8
+            mt: 8,
+            width: "95%"
         },
         children: links.map((link, i)=>/*#__PURE__*/ (0,jsx_runtime_.jsxs)((Box_default()), {
                 component: (link_default()),
                 href: link.href,
                 sx: {
                     position: "relative",
+                    width: "100%",
                     alignSelf: i % 2 === 1 ? "flex-end" : "flex-start",
                     px: 2,
                     py: 1.25,
-                    maxWidth: 250,
+                    maxWidth: {
+                        xs: 250,
+                        md: "none"
+                    },
                     fontSize: "16px",
                     textAlign: "center",
                     borderRadius: "10px",
@@ -94,11 +226,26 @@ const Roadmap = ()=>{
                             left: i % 2 === 0 ? "100%" : "",
                             right: i % 2 === 0 ? "" : "100%",
                             top: "50%",
-                            width: "19%",
-                            height: 50,
+                            width: {
+                                xs: "19%",
+                                md: 35
+                            },
+                            height: {
+                                xs: 50,
+                                md: 58
+                            },
                             borderTopRightRadius: i % 2 === 0 ? "13px" : 0,
                             borderTopLeftRadius: i % 2 === 0 ? 0 : "13px",
+                            borderBottomLeftRadius: i % 2 === 0 ? 0 : {
+                                md: "13px"
+                            },
+                            borderBottomRightRadius: i % 2 === 1 ? 0 : {
+                                md: "13px"
+                            },
                             borderTop: "2px solid black",
+                            borderBottom: {
+                                md: "2px solid black"
+                            },
                             borderRight: i % 2 === 0 ? "2px solid black" : 0,
                             borderLeft: i % 2 === 0 ? 0 : "2px solid black",
                             pointerEvents: "none"
@@ -130,14 +277,17 @@ const NavMenu = ({ open , onClose  })=>{
     return /*#__PURE__*/ jsx_runtime_.jsx((Drawer_default()), {
         open: open,
         onClose: onClose,
-        hideBackdrop: true,
         keepMounted: true,
         anchor: "right",
         sx: {
-            zIndex: 80,
+            zIndex: 78,
             "& .MuiPaper-root": {
-                width: "100%",
-                zIndex: 79
+                width: {
+                    xs: "100%",
+                    md: 500
+                },
+                zIndex: 79,
+                borderLeft: "none"
             }
         },
         children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)((Paper_default()), {
@@ -174,8 +324,6 @@ const NavMenu = ({ open , onClose  })=>{
 };
 /* harmony default export */ const header_NavMenu = (NavMenu);
 
-// EXTERNAL MODULE: external "react"
-var external_react_ = __webpack_require__(6689);
 // EXTERNAL MODULE: ./node_modules/next/image.js
 var next_image = __webpack_require__(5675);
 var image_default = /*#__PURE__*/__webpack_require__.n(next_image);
@@ -209,7 +357,11 @@ const MenuSetter = ({ onClick , isCross  })=>{
                     mb: i === 2 ? 0 : "5px",
                     transition: "transform 0.4s ease-out",
                     userSelect: "none",
-                    transform: isCross ? i == 0 ? "translateY(10px) rotate(45deg)" : i == 2 ? "translateY(-10px) rotate(-45deg)" : "translateX(100px)" : ""
+                    transform: isCross ? i == 0 ? "translateY(10px) rotate(45deg)" : i == 2 ? "translateY(-10px) rotate(-45deg)" : {
+                        xs: "translateX(100px)",
+                        lg: "translateX(200px)",
+                        xl: "translateX(500px)"
+                    } : ""
                 }
             }, "bar" + color))
     });
@@ -237,54 +389,58 @@ const Header = ()=>{
     function setMenuHandler() {
         setIsMenuOpen((prev)=>!prev);
     }
-    return /*#__PURE__*/ jsx_runtime_.jsx((AppBar_default()), {
+    return /*#__PURE__*/ (0,jsx_runtime_.jsxs)((AppBar_default()), {
         sx: {
             bgcolor: "#FFFFFF",
             alignItems: "center",
             height: "68px",
-            position: "fixed",
-            zIndex: 100
+            position: "fixed"
         },
-        children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)((Toolbar_default()), {
-            sx: {
-                width: "100%",
-                height: "100%",
-                maxWidth: "1366px",
-                justifyContent: "space-between",
-                alignItems: "center",
-                px: 3.5
-            },
-            children: [
-                /*#__PURE__*/ jsx_runtime_.jsx((Box_default()), {
-                    component: (link_default()),
-                    href: "/main",
-                    sx: {
-                        position: "relative",
-                        bottom: 2
-                    },
-                    children: /*#__PURE__*/ jsx_runtime_.jsx((image_default()), {
-                        unoptimized: true,
-                        src: "./long-logo.png",
-                        alt: "ОЛИМП",
-                        width: 149.5,
-                        height: 42.5
+        children: [
+            /*#__PURE__*/ (0,jsx_runtime_.jsxs)((Toolbar_default()), {
+                sx: {
+                    width: "100%",
+                    zIndex: 100,
+                    height: "100%",
+                    maxWidth: "1366px",
+                    justifyContent: "space-between",
+                    alignItems: "center",
+                    px: 3.5
+                },
+                children: [
+                    /*#__PURE__*/ jsx_runtime_.jsx((Box_default()), {
+                        component: (link_default()),
+                        href: "/main",
+                        sx: {
+                            position: "relative",
+                            bottom: 2
+                        },
+                        children: /*#__PURE__*/ jsx_runtime_.jsx((image_default()), {
+                            unoptimized: true,
+                            src: "./long-logo.png",
+                            alt: "ОЛИМП",
+                            width: 149.5,
+                            height: 42.5
+                        })
+                    }),
+                    /*#__PURE__*/ jsx_runtime_.jsx(header_MenuSetter, {
+                        onClick: setMenuHandler,
+                        isCross: isMenuOpen
                     })
-                }),
-                /*#__PURE__*/ jsx_runtime_.jsx(header_MenuSetter, {
-                    onClick: setMenuHandler,
-                    isCross: isMenuOpen
-                }),
-                /*#__PURE__*/ jsx_runtime_.jsx(header_NavMenu, {
-                    open: isMenuOpen,
-                    onClose: setMenuHandler
-                })
-            ]
-        })
+                ]
+            }),
+            /*#__PURE__*/ jsx_runtime_.jsx(header_NavMenu, {
+                open: isMenuOpen,
+                onClose: setMenuHandler
+            })
+        ]
     });
 };
 /* harmony default export */ const header_Header = (Header);
 
 ;// CONCATENATED MODULE: ./src/components/layout/Layout.tsx
+
+
 
 
 
@@ -296,7 +452,14 @@ const Layout = ({ children  })=>{
             /*#__PURE__*/ jsx_runtime_.jsx((Box_default()), {
                 component: "main",
                 pb: 8,
+                maxWidth: 1366,
+                mx: "auto",
+                px: 2,
                 children: children
+            }),
+            /*#__PURE__*/ jsx_runtime_.jsx(layout_ProgressBar, {}),
+            /*#__PURE__*/ jsx_runtime_.jsx(layout_UpButton, {
+                sx: {}
             })
         ]
     });
@@ -319,38 +482,44 @@ const theme = (0,styles_namespaceObject.createTheme)({
     typography: {
         h1: {
             fontFamily: heroFontFam,
-            fontSize: "40px",
+            // fontSize: "40px",
+            fontSize: "2.86rem",
             fontWeight: 800,
             lineHeight: 1.365
         },
         h2: {
             fontFamily: headingFontFam,
-            fontSize: "28px",
+            // fontSize: "28px",
+            fontSize: "2rem",
             fontWeight: 500,
             lineHeight: 1.2
         },
         h3: {
             fontFamily: headingFontFam,
-            fontSize: "20px",
+            // fontSize: "20px",
+            fontSize: "1.44rem",
             fontWeight: 600,
             lineHeight: 1.21,
             textTransform: "uppercase"
         },
         h4: {
             fontFamily: headingFontFam,
-            fontSize: "20px",
+            // fontSize: "20px",
+            fontSize: "1.44rem",
             fontWeight: 300,
             lineHeight: 1.21
         },
         subtitle1: {
             fontFamily: bodyFontFam,
-            fontSize: "24px",
+            // fontSize: "24px",
+            fontSize: "1.72rem",
             fontWeight: 300,
             lineHeight: 1.17
         },
         body1: {
             fontFamily: bodyFontFam,
-            fontSize: "16px",
+            // fontSize: "16px",
+            fontSize: "1.14rem",
             fontWeight: 400,
             lineHeight: 1.21
         }
@@ -430,6 +599,14 @@ function App({ Component , pageProps  }) {
 
 "use strict";
 module.exports = require("@mui/material/Box");
+
+/***/ }),
+
+/***/ 3819:
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("@mui/material/Button");
 
 /***/ }),
 
@@ -608,7 +785,7 @@ module.exports = require("react/jsx-runtime");
 var __webpack_require__ = require("../webpack-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-var __webpack_exports__ = __webpack_require__.X(0, [664,636,675], () => (__webpack_exec__(1375)));
+var __webpack_exports__ = __webpack_require__.X(0, [664,636,675], () => (__webpack_exec__(3517)));
 module.exports = __webpack_exports__;
 
 })();

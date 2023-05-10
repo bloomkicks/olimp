@@ -1,4 +1,7 @@
-:root {
+html {
+  font-size: 16px;
+  scroll-padding-top: 88px;
+  scroll-behavior: smooth;
 }
 
 * {
@@ -29,6 +32,12 @@ button {
   border: none;
   display: "block";
   background-color: "none";
+}
+
+@media (max-width: 1200px) {
+  html {
+    font-size: 14px;
+  }
 }
 
 @media (prefers-color-scheme: dark) {
