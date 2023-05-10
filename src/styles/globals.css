@@ -39,6 +39,11 @@ button {
     font-size: 14px;
   }
 }
+@media (max-width: 374px) {
+  html {
+    font-size: 13.5px;
+  }
+}
 
 @media (prefers-color-scheme: dark) {
   html {

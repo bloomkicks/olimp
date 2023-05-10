@@ -452,9 +452,11 @@ const Layout = ({ children  })=>{
             /*#__PURE__*/ jsx_runtime_.jsx((Box_default()), {
                 component: "main",
                 pb: 8,
-                maxWidth: 1366,
+                maxWidth: 1300,
                 mx: "auto",
-                px: 2,
+                px: {
+                    md: 2
+                },
                 children: children
             }),
             /*#__PURE__*/ jsx_runtime_.jsx(layout_ProgressBar, {}),

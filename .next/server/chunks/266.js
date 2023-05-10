@@ -51,11 +51,7 @@ const HeroIllustration = ({ imgSrc , alt , sx  })=>{
         src: imgSrc,
         alt: alt || "",
         sx: {
-            width: "calc(100% + 48px)",
-            flexShrink: {
-                xs: 0,
-                md: 1
-            },
+            width: "100%",
             maxWidth: 500,
             borderRight: {
                 md: "1px solid #BBBBBB"
