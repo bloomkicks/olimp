@@ -114,17 +114,21 @@ var LinearProgress_default = /*#__PURE__*/__webpack_require__.n(LinearProgress_n
 const ProgressBar = ()=>{
     const [progress, setProgress] = (0,external_react_.useState)(0);
     (0,external_react_.useEffect)(()=>{
-        function scrollHandler(e) {
-            const docHeight = document.documentElement.scrollHeight;
-            const viewHeight = window.innerHeight;
-            const scroll = window.scrollY;
-            const progressVal = Math.ceil(scroll / (docHeight - viewHeight) * 100);
-            if (progress !== progressVal) {
-                setProgress(Math.ceil(progressVal));
-            }
+        function scrollHandler() {
+            let timeout = null;
+            return function() {
+                clearTimeout(timeout);
+                timeout = setTimeout(()=>{
+                    const docHeight = document.documentElement.scrollHeight;
+                    const viewHeight = window.innerHeight;
+                    const scroll = window.scrollY;
+                    const progressVal = Math.ceil(scroll / (docHeight - viewHeight) * 100);
+                    setProgress(Math.ceil(progressVal));
+                }, 300);
+            };
         }
-        document.addEventListener("scroll", scrollHandler);
-        window.addEventListener("resize", scrollHandler);
+        document.addEventListener("scroll", scrollHandler());
+        window.addEventListener("resize", scrollHandler());
     }, []);
     return /*#__PURE__*/ jsx_runtime_.jsx((LinearProgress_default()), {
         variant: "determinate",

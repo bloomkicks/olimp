@@ -5,18 +5,24 @@ const ProgressBar = () => {
   const [progress, setProgress] = useState(0);
 
   useEffect(() => {
-    function scrollHandler(e: any) {
-      const docHeight = document.documentElement.scrollHeight;
-      const viewHeight = window.innerHeight;
-      const scroll = window.scrollY;
+    function scrollHandler() {
+      let timeout: NodeJS.Timeout | null = null;
+      return function () {
+        clearTimeout(timeout!);
+        timeout = setTimeout(() => {
+          const docHeight = document.documentElement.scrollHeight;
+          const viewHeight = window.innerHeight;
+          const scroll = window.scrollY;
 
-      const progressVal = Math.ceil((scroll / (docHeight - viewHeight)) * 100);
-      if (progress !== progressVal) {
-        setProgress(Math.ceil(progressVal));
-      }
+          const progressVal = Math.ceil(
+            (scroll / (docHeight - viewHeight)) * 100
+          );
+          setProgress(Math.ceil(progressVal));
+        }, 300);
+      };
     }
-    document.addEventListener("scroll", scrollHandler);
-    window.addEventListener("resize", scrollHandler);
+    document.addEventListener("scroll", scrollHandler());
+    window.addEventListener("resize", scrollHandler());
   }, []);
 
   return (
