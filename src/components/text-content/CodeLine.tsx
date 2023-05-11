@@ -14,14 +14,16 @@ const CodeLine = ({
     <Box
       className={type}
       sx={{
-        opacity: type === "comment" || type === "response" ? 0.6 : 1,
+        opacity: ["comment", "response", "print"].includes(type || "")
+          ? 0.65
+          : 1,
         mx: type === "centered" ? "auto !important" : "",
         pl: type === "inner" ? 3.5 : 0,
         width: "fit-content",
       }}
     >
       {!["no-console", "centered", "print", "inner"].includes(type || "") && (
-        <Typography component="span" variant="inherit" sx={{ opacity: 0.6 }}>
+        <Typography component="span" variant="inherit" sx={{ opacity: 0.65 }}>
           {"> "}
         </Typography>
       )}
@@ -31,7 +33,7 @@ const CodeLine = ({
           component="span"
           display="inline"
           ml={1.5}
-          sx={{ opacity: 0.6 }}
+          sx={{ opacity: 0.8 }}
         >
           {comment}
         </Typography>

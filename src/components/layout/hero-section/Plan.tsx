@@ -39,15 +39,20 @@ const Plan = ({
           <Typography
             component={point.href ? Link : "p"}
             href={point.href || ""}
-            sx={{ textDecoration: point.href ? "underline" : "none" }}
+            color={point.href ? "primary.dark" : "text.primary"}
             variant="subtitle1"
             key={i + point.title}
             width={{
               md: isWrap ? "49%" : "auto",
               maxWidth: "fit-content",
             }}
+            sx={{
+              "&:hover": {
+                textDecoration: point.href ? "underline" : "none",
+              },
+            }}
           >
-            {`${i + 1}. ${point.title}`}
+            {i + 1}. {point.title}
           </Typography>
         ))}
       </Stack>

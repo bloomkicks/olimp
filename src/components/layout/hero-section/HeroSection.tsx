@@ -36,10 +36,10 @@ const HeroSection = ({
             width: "100%",
             maxHeight: 300,
             maxWidth: 600,
-            aspectRatio: (illustration.width / illustration.height + "").slice(
-              0,
-              4
-            ),
+            aspectRatio: (
+              illustration.width / illustration.height +
+              ""
+            ).slice(0, 4),
             ...(sx || {}),
           }}
         >
@@ -53,6 +53,7 @@ const HeroSection = ({
               transform: "translate(-50%, -50%)",
               width: "100%",
               px: 3,
+              zIndex: 10,
             }}
           >
             {heading}
@@ -62,7 +63,10 @@ const HeroSection = ({
         <Description title={descTitle} text={description} />
       </Stack>
       {!noPlan && (
-        <Plan title={planTitle || "ПЛАН ОБУЧЕНИЯ"} points={planPoints!} />
+        <Plan
+          title={planTitle || "ПЛАН ОБУЧЕНИЯ"}
+          points={planPoints!}
+        />
       )}
       <HeroDivider />
     </Box>

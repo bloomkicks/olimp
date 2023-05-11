@@ -5,7 +5,7 @@ const PythonHero = () => {
     <HeroSection
       heading="ИЗУЧЕНИЕ ЯЗЫКА PYTHON"
       descTitle="Программирование на языке Python"
-      description="Начнем с того, что нам нужно выбрать язык, на котором мы будем писать решение. Новичкам хорошо подойдет Python с простым синтаксисом и широким функционалом"
+      description="Начинающим лучше других языков подойдет Python с простым синтаксисом и широким функционалом"
       planTitle="ПЛАН ОБУЧЕНИЯ"
       planPoints={[
         { title: "Установка Python и IDE", href: "#installation" },
@@ -32,7 +32,7 @@ const PythonHero = () => {
         imgSrc: "./illustrations/python/hero-illustration.png",
         width: 412,
         height: 211,
-        sx: { py: 2 },
+        sx: { py: 2, opacity: 0.8 },
         alt: "",
       }}
     />

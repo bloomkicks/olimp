@@ -7,13 +7,7 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
   return (
     <Box pt="68px">
       <Header />
-      <Box
-        component="main"
-        pb={8}
-        maxWidth={1300}
-        mx="auto"
-        px={{ md: 2 }}
-      >
+      <Box component="main" pb={8} maxWidth={1300} mx="auto" px={{ md: 2 }}>
         {children}
       </Box>
       <ProgressBar />

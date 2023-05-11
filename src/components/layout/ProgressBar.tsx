@@ -18,7 +18,7 @@ const ProgressBar = () => {
             (scroll / (docHeight - viewHeight)) * 100
           );
           setProgress(Math.ceil(progressVal));
-        }, 300);
+        }, 50);
       };
     }
     document.addEventListener("scroll", scrollHandler());

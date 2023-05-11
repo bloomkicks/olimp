@@ -139,18 +139,25 @@ const Plan = ({ title , points  })=>{
                 textAlign: "left",
                 px: 4,
                 minWidth: 340,
-                children: points.map((point, i)=>/*#__PURE__*/ jsx_runtime_.jsx((Typography_default()), {
+                children: points.map((point, i)=>/*#__PURE__*/ (0,jsx_runtime_.jsxs)((Typography_default()), {
                         component: point.href ? (link_default()) : "p",
                         href: point.href || "",
-                        sx: {
-                            textDecoration: point.href ? "underline" : "none"
-                        },
+                        color: point.href ? "primary.dark" : "text.primary",
                         variant: "subtitle1",
                         width: {
                             md: isWrap ? "49%" : "auto",
                             maxWidth: "fit-content"
                         },
-                        children: `${i + 1}. ${point.title}`
+                        sx: {
+                            "&:hover": {
+                                textDecoration: point.href ? "underline" : "none"
+                            }
+                        },
+                        children: [
+                            i + 1,
+                            ". ",
+                            point.title
+                        ]
                     }, i + point.title))
             })
         ]
@@ -203,7 +210,8 @@ const HeroSection = ({ heading , descTitle , description , planPoints , planTitl
                                     left: "50%",
                                     transform: "translate(-50%, -50%)",
                                     width: "100%",
-                                    px: 3
+                                    px: 3,
+                                    zIndex: 10
                                 },
                                 children: heading
                             }),

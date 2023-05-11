@@ -38,7 +38,7 @@ const Roadmap = () => {
         maxWidth: { xs: 350, md: 300 },
         mx: "auto",
         mt: 8,
-        width: "95%",
+        width: "90%",
       }}
     >
       {links.map((link, i) => (
@@ -73,10 +73,10 @@ const Roadmap = () => {
                 top: "50%",
                 width: { xs: "19%", md: 35 },
                 height: { xs: 50, md: 58 },
-                borderTopRightRadius: i % 2 === 0 ? "13px" : 0,
-                borderTopLeftRadius: i % 2 === 0 ? 0 : "13px",
-                borderBottomLeftRadius: i % 2 === 0 ? 0 : { md: "13px" },
-                borderBottomRightRadius: i % 2 === 1 ? 0 : { md: "13px" },
+                borderTopRightRadius: i % 2 === 0 ? "20px" : 0,
+                borderTopLeftRadius: i % 2 === 0 ? 0 : "20px",
+                borderBottomLeftRadius: i % 2 === 0 ? 0 : { md: "20px" },
+                borderBottomRightRadius: i % 2 === 1 ? 0 : { md: "20px" },
                 borderTop: "2px solid black",
                 borderBottom: { md: "2px solid black" },
                 borderRight: i % 2 === 0 ? "2px solid black" : 0,

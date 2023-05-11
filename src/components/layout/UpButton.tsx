@@ -35,7 +35,7 @@ const UpButton = ({ sx }: { sx: any }) => {
         minWidth: 57.5,
         position: "fixed",
         right: { xs: 30, md: 70, lg: 80 },
-        bottom: { xs: 35, md: 40, lg: 50 },
+        bottom: { xs: 37.5, md: 42.5, lg: 50 },
         opacity: isVisible ? { xs: 0.925, md: 1 } : 0,
         justifyContent: "center",
         alignItems: "center",

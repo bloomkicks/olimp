@@ -39,7 +39,11 @@ const Header = () => {
           href="/main"
           sx={{
             position: "relative",
-            bottom: 2,
+            bottom: 1.5,
+            color: "black",
+            fontWeight: "bold",
+            fontSize: "2rem",
+            textDecoration: "underline",
           }}
         >
           <Image

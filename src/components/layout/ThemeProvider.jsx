@@ -64,10 +64,10 @@ const theme = createTheme({
     },
     code: {
       default: "#FFFFFF",
-      variable: "#BBD6FF",
-      function: "#F2FFA5",
-      value: "#92FF77",
-      keyword: "#D7B8FF",
+      variable: "#B9D4FD",
+      function: "#F0FDA3",
+      value: "#92E277",
+      keyword: "#D0B8FF",
       comment: "#B7FFF2",
     },
     background: {
@@ -76,6 +76,11 @@ const theme = createTheme({
     },
   },
   components: {
+    MuiDivider: {
+      styleOverrides: {
+        root: { opacity: 0.8 },
+      },
+    },
     MuiButton: {
       styleOverrides: {
         contained: {},

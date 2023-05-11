@@ -4,28 +4,26 @@ const AlgorithmsHero = () => {
   return (
     <HeroSection
       heading="ВАЖНЫЕ АЛГОРИТМЫ И СТРУКТУРЫ ДАННЫХ"
-      descTitle="Важные алгоритмы и структуры данных"
-      description="Знание разных алгоритмов сильно помогает участникам олимпиады в решении задач. А структуры данных позволяют найти самый удобный способ решения"
+      descTitle="Структуры данных и алгоритмы"
+      description="Знание алгоритмов и структур данных позволяет найти самый эффективный способ решения задачи"
       planTitle="ПЛАН ОБУЧЕНИЯ"
       planPoints={[
         { title: "Понятие алгоритмов и структур данных" },
         { title: "Сложность алгоритмов, Big O нотация" },
-        { title: "Arrays и Linked Lists" },
-        { title: "Queues и Stacks" },
-        { title: "Classes и OOP" },
+        { title: "Array и Linked List" },
         { title: "Recursion" },
+        { title: "Алгоритмы поиска" },
+        { title: "Алгоритмы сортировки" },
         {
-          title: "Algorithm building ideas (divide and cunquer, etc.)",
+          title: "Queue и Stack",
         },
-        { title: "Search algorithms" },
-        { title: "Sorting algorithms" },
-        { title: "Hashmaps и hash-functions" },
-        { title: "Graphs и Trees" },
-        { title: "Graphs algorithms" },
-        { title: "Greedy algorithms" },
-        { title: "Dynamic programming" },
-        { title: "Matrix" },
-        { title: "Sparse tables" },
+        { title: "Эвристические методы" },
+        { title: "Hashmap и hash-functions" },
+        { title: "Невзвешенный граф" },
+        { title: "Взвешенный граф" },
+        { title: "Деревья" },
+        { title: "Жадные алгоритмы" },
+        { title: "Динамическое программирование" },
       ]}
       illustration={{
         imgSrc: "./illustrations/algorithms/hero-illustration.png",

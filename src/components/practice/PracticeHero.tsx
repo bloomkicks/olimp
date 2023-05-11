@@ -11,7 +11,7 @@ const PracticeHero = () => {
         imgSrc: "./illustrations/practice/hero-illustration.png",
         width: 412,
         height: 248,
-        sx: { opacity: 1, mb: -1 },
+        sx: { opacity: 0.95, mb: -1 },
         alt: "",
       }}
       sx={{ mb: 7 }}

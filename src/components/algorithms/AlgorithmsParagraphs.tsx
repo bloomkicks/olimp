@@ -7,7 +7,7 @@ const AlgorithmsParagraphs = () => {
   return (
     <Box>
       <Paragraph title="ОСНОВНЫЕ УЧЕБНЫЕ РЕСУРСЫ">
-        <SubPara>1</SubPara>
+        <SubPara>Продолжение появится в скором времени...</SubPara>
       </Paragraph>
     </Box>
   );

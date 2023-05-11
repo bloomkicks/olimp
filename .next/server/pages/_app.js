@@ -71,8 +71,8 @@ const UpButton = ({ sx  })=>{
                 lg: 80
             },
             bottom: {
-                xs: 35,
-                md: 40,
+                xs: 37.5,
+                md: 42.5,
                 lg: 50
             },
             opacity: isVisible ? {
@@ -124,7 +124,7 @@ const ProgressBar = ()=>{
                     const scroll = window.scrollY;
                     const progressVal = Math.ceil(scroll / (docHeight - viewHeight) * 100);
                     setProgress(Math.ceil(progressVal));
-                }, 300);
+                }, 50);
             };
         }
         document.addEventListener("scroll", scrollHandler());
@@ -198,7 +198,7 @@ const Roadmap = ()=>{
             },
             mx: "auto",
             mt: 8,
-            width: "95%"
+            width: "90%"
         },
         children: links.map((link, i)=>/*#__PURE__*/ (0,jsx_runtime_.jsxs)((Box_default()), {
                 component: (link_default()),
@@ -238,13 +238,13 @@ const Roadmap = ()=>{
                                 xs: 50,
                                 md: 58
                             },
-                            borderTopRightRadius: i % 2 === 0 ? "13px" : 0,
-                            borderTopLeftRadius: i % 2 === 0 ? 0 : "13px",
+                            borderTopRightRadius: i % 2 === 0 ? "20px" : 0,
+                            borderTopLeftRadius: i % 2 === 0 ? 0 : "20px",
                             borderBottomLeftRadius: i % 2 === 0 ? 0 : {
-                                md: "13px"
+                                md: "20px"
                             },
                             borderBottomRightRadius: i % 2 === 1 ? 0 : {
-                                md: "13px"
+                                md: "20px"
                             },
                             borderTop: "2px solid black",
                             borderBottom: {
@@ -417,7 +417,11 @@ const Header = ()=>{
                         href: "/main",
                         sx: {
                             position: "relative",
-                            bottom: 2
+                            bottom: 1.5,
+                            color: "black",
+                            fontWeight: "bold",
+                            fontSize: "2rem",
+                            textDecoration: "underline"
                         },
                         children: /*#__PURE__*/ jsx_runtime_.jsx((image_default()), {
                             unoptimized: true,
@@ -543,10 +547,10 @@ const theme = (0,styles_namespaceObject.createTheme)({
         },
         code: {
             default: "#FFFFFF",
-            variable: "#BBD6FF",
-            function: "#F2FFA5",
-            value: "#92FF77",
-            keyword: "#D7B8FF",
+            variable: "#B9D4FD",
+            function: "#F0FDA3",
+            value: "#92E277",
+            keyword: "#D0B8FF",
             comment: "#B7FFF2"
         },
         background: {
@@ -555,6 +559,13 @@ const theme = (0,styles_namespaceObject.createTheme)({
         }
     },
     components: {
+        MuiDivider: {
+            styleOverrides: {
+                root: {
+                    opacity: 0.8
+                }
+            }
+        },
         MuiButton: {
             styleOverrides: {
                 contained: {}

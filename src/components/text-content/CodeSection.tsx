@@ -7,7 +7,7 @@ const CodeSection = ({ children }: { children: React.ReactNode }) => {
       className="code-section"
       sx={{
         padding: "15px 20px",
-        bgcolor: "gray",
+        bgcolor: "#606060",
         my: "13px",
         color: "code.default",
         "& > div": {

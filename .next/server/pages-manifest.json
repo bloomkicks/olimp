@@ -6,7 +6,7 @@
   "/algorithms": "pages/algorithms.html",
   "/main": "pages/main.html",
   "/practice": "pages/practice.html",
-  "/python": "pages/python.html",
   "/science": "pages/science.html",
+  "/python": "pages/python.html",
   "/404": "pages/404.html"
 }
