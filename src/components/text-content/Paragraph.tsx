@@ -6,10 +6,12 @@ const Paragraph = ({
   title,
   children,
   id = "",
+  sx,
 }: {
-  title: string;
+  title?: string;
   children: React.ReactNode;
   id?: string;
+  sx?: any;
 }) => {
   return (
     <Box
@@ -26,9 +28,13 @@ const Paragraph = ({
           mt: "13px",
           mb: "13px",
         },
+        "& > h2": {
+          mb: "16px",
+        },
+        ...(sx || {}),
       }}
     >
-      <Typography variant="h3">{title}</Typography>
+      {title && <Typography variant="h3">{title}</Typography>}
       {children}
     </Box>
   );

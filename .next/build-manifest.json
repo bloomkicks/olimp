@@ -5,8 +5,8 @@
   "devFiles": [],
   "ampDevFiles": [],
   "lowPriorityFiles": [
-    "static/SzuxUg7nabEh4OpqKHSAo/_buildManifest.js",
-    "static/SzuxUg7nabEh4OpqKHSAo/_ssgManifest.js"
+    "static/BM9BdDEFureI4tjHTGSXO/_buildManifest.js",
+    "static/BM9BdDEFureI4tjHTGSXO/_ssgManifest.js"
   ],
   "rootMainFiles": [],
   "pages": {
@@ -15,7 +15,7 @@
       "static/chunks/framework-2c79e2a64abdb08b.js",
       "static/chunks/main-371faf85487e832a.js",
       "static/css/06dc7350f2ec2a34.css",
-      "static/chunks/pages/_app-420bbd876cac5428.js"
+      "static/chunks/pages/_app-af956758a4f21256.js"
     ],
     "/_error": [
       "static/chunks/webpack-d1e5fecf5c46a0ec.js",
@@ -35,14 +35,14 @@
       "static/chunks/framework-2c79e2a64abdb08b.js",
       "static/chunks/main-371faf85487e832a.js",
       "static/chunks/702-9fa5372c859500ad.js",
-      "static/chunks/pages/algorithms-c7a6a4d4c9bb17cb.js"
+      "static/chunks/pages/algorithms-8c2022be10d934e9.js"
     ],
     "/main": [
       "static/chunks/webpack-d1e5fecf5c46a0ec.js",
       "static/chunks/framework-2c79e2a64abdb08b.js",
       "static/chunks/main-371faf85487e832a.js",
       "static/chunks/702-9fa5372c859500ad.js",
-      "static/chunks/pages/main-543c2fb70d4a6ad2.js"
+      "static/chunks/pages/main-0bf103f5b646b719.js"
     ],
     "/practice": [
       "static/chunks/webpack-d1e5fecf5c46a0ec.js",
@@ -56,14 +56,14 @@
       "static/chunks/framework-2c79e2a64abdb08b.js",
       "static/chunks/main-371faf85487e832a.js",
       "static/chunks/702-9fa5372c859500ad.js",
-      "static/chunks/pages/python-3fed57ac66631f46.js"
+      "static/chunks/pages/python-1fd477a7ab6b48d3.js"
     ],
     "/science": [
       "static/chunks/webpack-d1e5fecf5c46a0ec.js",
       "static/chunks/framework-2c79e2a64abdb08b.js",
       "static/chunks/main-371faf85487e832a.js",
       "static/chunks/702-9fa5372c859500ad.js",
-      "static/chunks/pages/science-61b1eaa8d8d87579.js"
+      "static/chunks/pages/science-11c5235a1a0032f7.js"
     ]
   },
   "ampFirstPages": []

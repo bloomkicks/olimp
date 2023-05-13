@@ -21,7 +21,7 @@ exports.modules = {
 
 
 
-const Paragraph = ({ title , children , id =""  })=>{
+const Paragraph = ({ title , children , id ="" , sx  })=>{
     return /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)((_mui_material_Box__WEBPACK_IMPORTED_MODULE_2___default()), {
         component: "article",
         id: id,
@@ -35,10 +35,14 @@ const Paragraph = ({ title , children , id =""  })=>{
             "& > .code": {
                 mt: "13px",
                 mb: "13px"
-            }
+            },
+            "& > h2": {
+                mb: "16px"
+            },
+            ...sx || {}
         },
         children: [
-            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((_mui_material_Typography__WEBPACK_IMPORTED_MODULE_1___default()), {
+            title && /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((_mui_material_Typography__WEBPACK_IMPORTED_MODULE_1___default()), {
                 variant: "h3",
                 children: title
             }),
