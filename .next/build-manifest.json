@@ -5,8 +5,8 @@
   "devFiles": [],
   "ampDevFiles": [],
   "lowPriorityFiles": [
-    "static/R6qrfZJngysJTFY_ialOW/_buildManifest.js",
-    "static/R6qrfZJngysJTFY_ialOW/_ssgManifest.js"
+    "static/O4g6niMYr53JySz8JakPW/_buildManifest.js",
+    "static/O4g6niMYr53JySz8JakPW/_ssgManifest.js"
   ],
   "rootMainFiles": [],
   "pages": {
@@ -25,7 +25,7 @@
     ],
     "/algorithms": [
       "static/chunks/main-eb3172688a7bc405.js",
-      "static/chunks/pages/algorithms-4c675721400fb6ba.js"
+      "static/chunks/pages/algorithms-12bfacc6388cbd73.js"
     ],
     "/main": [
       "static/chunks/main-eb3172688a7bc405.js",
@@ -41,7 +41,7 @@
     ],
     "/science": [
       "static/chunks/main-eb3172688a7bc405.js",
-      "static/chunks/pages/science-fab4b029e36bebcc.js"
+      "static/chunks/pages/science-83abb8bc62645111.js"
     ]
   },
   "ampFirstPages": []

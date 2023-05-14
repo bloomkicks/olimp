@@ -7,13 +7,13 @@ const ScienceHero = () => {
       descTitle="Математика и компьютерные науки"
       description="Ознакомленность с понятиями этих наук очень поможет вам в решении задач большинства олимпиад по информатике"
       planPoints={[
-        { title: "Простые числа и их свойства" },
-        { title: "Арифметические алгоритмы" },
-        { title: "Прогрессии и последовательности" },
-        { title: "Теория вероятности" },
-        { title: "Вычислительная геометрия" },
-        { title: "Системы счисления" },
-        { title: "Законы логики" },
+        { title: "Простые числа и их свойства", href: "#primary-numbers" },
+        { title: "Арифметические алгоритмы", href: "#arithmetic-algorithms" },
+        { title: "Прогрессии и последовательности", href: "#progressions" },
+        { title: "Теория вероятности", href: "#probability-theory" },
+        { title: "Вычислительная геометрия", href: "#computational-geometry" },
+        { title: "Системы счисления", href: "#number-systems" },
+        { title: "Законы логики", href: "#logic-laws" },
       ]}
       illustration={{
         imgSrc: "./illustrations/science/hero-illustration.png",
