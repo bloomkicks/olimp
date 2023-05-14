@@ -1,11 +1,11 @@
 {
   "/_app": "pages/_app.js",
   "/_error": "pages/_error.js",
-  "/advice": "pages/advice.html",
-  "/algorithms": "pages/algorithms.html",
   "/_document": "pages/_document.js",
-  "/practice": "pages/practice.html",
+  "/advice": "pages/advice.html",
   "/main": "pages/main.html",
+  "/algorithms": "pages/algorithms.html",
+  "/practice": "pages/practice.html",
   "/python": "pages/python.html",
   "/science": "pages/science.html",
   "/404": "pages/404.html"

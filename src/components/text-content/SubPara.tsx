@@ -16,14 +16,20 @@ const SubPara = ({
         "& li": {
           mt: 0.75,
         },
+        "& .keyword": {
+          color: "text.keyword",
+        },
+        "& .variable": {
+          color: "text.variable",
+        },
         "& .var-blue": {
-          color: "code.variable",
+          color: "text.var-blue",
         },
         "& .var-red": {
-          color: "code.keyword",
+          color: "text.var-red",
         },
-        "& .keyword": {
-          color: "code.keyword",
+        "& .var-green": {
+          color: "text.var-green",
         },
       }}
     >
