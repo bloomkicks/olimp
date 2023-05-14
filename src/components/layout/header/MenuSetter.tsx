@@ -11,6 +11,8 @@ const MenuSetter = ({
 
   return (
     <Box
+      aria-label="Открыть меню"
+      title="Открыть меню"
       component="button"
       onClick={onClick}
       sx={{

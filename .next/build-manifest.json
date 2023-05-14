@@ -5,15 +5,15 @@
   "devFiles": [],
   "ampDevFiles": [],
   "lowPriorityFiles": [
-    "static/YqjKgqRMi7ZaAgRRIBXb3/_buildManifest.js",
-    "static/YqjKgqRMi7ZaAgRRIBXb3/_ssgManifest.js"
+    "static/PCR0I3qAsd44FxdazFKAG/_buildManifest.js",
+    "static/PCR0I3qAsd44FxdazFKAG/_ssgManifest.js"
   ],
   "rootMainFiles": [],
   "pages": {
     "/_app": [
       "static/chunks/main-eb3172688a7bc405.js",
       "static/css/97eb4b9cfdeb884e.css",
-      "static/chunks/pages/_app-a2c1ef3949f231a3.js"
+      "static/chunks/pages/_app-34004214a2d4e0fe.js"
     ],
     "/_error": [
       "static/chunks/main-eb3172688a7bc405.js",
@@ -21,27 +21,27 @@
     ],
     "/advice": [
       "static/chunks/main-eb3172688a7bc405.js",
-      "static/chunks/pages/advice-50b65d44a60dc55b.js"
+      "static/chunks/pages/advice-41af6e299b4373e6.js"
     ],
     "/algorithms": [
       "static/chunks/main-eb3172688a7bc405.js",
-      "static/chunks/pages/algorithms-86ff09a005e791b8.js"
+      "static/chunks/pages/algorithms-3f540ccb8f0f6e7e.js"
     ],
     "/main": [
       "static/chunks/main-eb3172688a7bc405.js",
-      "static/chunks/pages/main-ef93b4e1c430fc7e.js"
+      "static/chunks/pages/main-d1aefb00a7cbf167.js"
     ],
     "/practice": [
       "static/chunks/main-eb3172688a7bc405.js",
-      "static/chunks/pages/practice-08fb0cb7d1abc548.js"
+      "static/chunks/pages/practice-e32fd9d7b1073226.js"
     ],
     "/python": [
       "static/chunks/main-eb3172688a7bc405.js",
-      "static/chunks/pages/python-d663f62b207d1da7.js"
+      "static/chunks/pages/python-65ee14d45f22906c.js"
     ],
     "/science": [
       "static/chunks/main-eb3172688a7bc405.js",
-      "static/chunks/pages/science-1bf2ad3f8857a5f2.js"
+      "static/chunks/pages/science-2c0621625371c5be.js"
     ]
   },
   "ampFirstPages": []

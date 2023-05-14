@@ -27,6 +27,7 @@ const ProgressBar = () => {
 
   return (
     <LinearProgress
+      aria-label="Прогресс на странице"
       variant="determinate"
       color="primary"
       value={progress}
