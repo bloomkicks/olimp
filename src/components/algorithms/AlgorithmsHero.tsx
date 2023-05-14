@@ -25,7 +25,7 @@ const AlgorithmsHero = () => {
           href: "#queues",
         },
         { title: "Эвристические методы", href: "#heuristic-methods" },
-        { title: "Хэш-таблицы и хэш-функции", href: "#hashmap" },
+        { title: "Hash-таблицы и hash-функции", href: "#hashmap" },
         {
           title: "Невзвешенный граф и алгоритмы поиска",
           href: "#unweighted-graph",

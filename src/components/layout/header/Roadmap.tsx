@@ -5,10 +5,6 @@ import Link from "next/link";
 
 let links = [
   {
-    title: "Советы и наставления по подготовке",
-    href: "/advice",
-  },
-  {
     title: "Программирование на языке Python",
     href: "/python",
   },
@@ -17,12 +13,16 @@ let links = [
     href: "/algorithms",
   },
   {
+    title: "Технические науки и математика",
+    href: "/science",
+  },
+  {
     title: "Разборы задач и практика",
     href: "/practice",
   },
   {
-    title: "Технические науки и математика",
-    href: "/science",
+    title: "Советы и наставления по подготовке",
+    href: "/advice",
   },
 ];
 

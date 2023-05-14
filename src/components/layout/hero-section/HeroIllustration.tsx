@@ -19,6 +19,7 @@ const HeroIllustration = ({
         width: "100%",
         maxWidth: 500,
         borderRight: { md: "1px solid #BBBBBB" },
+        aspectRatio: (width / height + "").slice(0, 4),
         ...sx,
       }}
     ></Box>

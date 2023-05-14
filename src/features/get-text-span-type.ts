@@ -27,6 +27,10 @@ function getTextSpanType(text: string): string {
     ].includes(text)
   ) {
     type = "variable";
+  } else if (text === "N") {
+    type = "var-red";
+  } else if (text === "M") {
+    type = "var-green";
   }
 
   return type;
