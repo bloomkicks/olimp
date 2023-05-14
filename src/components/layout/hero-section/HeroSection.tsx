@@ -22,6 +22,7 @@ const HeroSection = ({
     <Box component="article">
       <Stack
         direction={{ xs: "column", md: "row" }}
+        mb={{ md: 1.5 }}
         justifyContent="center"
         alignItems="center"
       >
@@ -60,7 +61,7 @@ const HeroSection = ({
           </Typography>
           <HeroIllustration {...illustration} />
         </Box>
-        <Description title={descTitle} text={description} />
+        <Description title={descTitle} text={description} noPlan={noPlan} />
       </Stack>
       {!noPlan && (
         <Plan title={planTitle || "ПЛАН ОБУЧЕНИЯ"} points={planPoints!} />

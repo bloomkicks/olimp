@@ -32,7 +32,7 @@ const Span = ({
       variant="inherit"
       className={types[0]}
       sx={{
-        color: "text." + types[0],
+        color: "text." + types[0] || "",
         fontWeight: types[1] === "bold" ? "bold" : "",
       }}
     >

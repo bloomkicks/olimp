@@ -1,10 +1,18 @@
 import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
 
-const Description = ({ title, text }: { title: string; text: string }) => {
+const Description = ({
+  title,
+  text,
+  noPlan,
+}: {
+  title: string;
+  text: string;
+  noPlan?: boolean;
+}) => {
   return (
     <Box
-      mb={6}
+      mb={noPlan ? 0 : 6}
       sx={{
         textAlign: { xs: "center", md: "left" },
         maxWidth: 700,

@@ -1,12 +1,12 @@
 {
   "/_app": "pages/_app.js",
+  "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
   "/advice": "pages/advice.html",
   "/algorithms": "pages/algorithms.html",
   "/main": "pages/main.html",
   "/practice": "pages/practice.html",
-  "/python": "pages/python.html",
   "/science": "pages/science.html",
-  "/_error": "pages/_error.js",
+  "/python": "pages/python.html",
   "/404": "pages/404.html"
 }

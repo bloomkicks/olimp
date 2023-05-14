@@ -61,6 +61,9 @@ const theme = createTheme({
       variable: "#074FA5",
       result: "#AE3E3E",
       keyword: "#A06CDF",
+      "var-red": "#AE3E3E",
+      "var-blue": "#074FA5",
+      "var-green": "#1D9938",
     },
     code: {
       default: "#FFFFFF",

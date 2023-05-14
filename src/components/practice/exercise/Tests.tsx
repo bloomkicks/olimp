@@ -1,5 +1,6 @@
 import type { Tests } from "@/types/exercise-props";
 import Typography from "@mui/material/Typography";
+import Span from "@/components/text-content/Span";
 import Box from "@mui/material/Box";
 
 const Tests = ({ tests }: { tests: Tests }) => {
@@ -9,12 +10,16 @@ const Tests = ({ tests }: { tests: Tests }) => {
       {tests.map((test, i) => (
         <Box key={i}>
           {test.in.map((variable, i, a) => (
-            <Typography key={i}>
-              {variable.name} = {variable.value},
+            <Typography key={i} display="inline">
+              <Span type={i === 0 ? "var-red" : "var-green"}>
+                {variable.name}
+              </Span>{" "}
+              = {variable.value},{" "}
             </Typography>
           ))}
-          <Typography>
-            {test.out.name || "Вывод"} = {test.out.value}
+          <Typography display="inline">
+            <Span type="var-blue">{test.out.name || "Вывод"}</Span> ={" "}
+            {test.out.value}
           </Typography>
         </Box>
       ))}

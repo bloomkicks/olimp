@@ -5,6 +5,10 @@ import Link from "next/link";
 
 let links = [
   {
+    title: "Советы и наставления по подготовке",
+    href: "/advice",
+  },
+  {
     title: "Программирование на языке Python",
     href: "/python",
   },
@@ -19,10 +23,6 @@ let links = [
   {
     title: "Технические науки и математика",
     href: "/science",
-  },
-  {
-    title: "Советы от победителей",
-    href: "/advice",
   },
 ];
 
@@ -71,7 +71,7 @@ const Roadmap = () => {
                 left: i % 2 === 0 ? "100%" : "",
                 right: i % 2 === 0 ? "" : "100%",
                 top: "50%",
-                width: { xs: "19%", md: 35 },
+                width: { xs: "15%", md: 30 },
                 height: { xs: 50, md: 58 },
                 borderTopRightRadius: i % 2 === 0 ? "20px" : 0,
                 borderTopLeftRadius: i % 2 === 0 ? 0 : "20px",

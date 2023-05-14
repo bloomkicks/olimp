@@ -4,8 +4,8 @@ const AdviceHero = () => {
   return (
     <HeroSection
       heading="ПОЛЕЗНЫЕ СОВЕТЫ ОТ ПОБЕДИТЕЛЕЙ"
-      descTitle="Полезные советы"
-      description="Услышьте советы тех, кто уже прошел долгий и муторный путь обучения и подготовки и достиг успехов в олимпиаде"
+      descTitle="Советы и наставления"
+      description="Услышьте советы тех, кто уже прошел тернистый путь подготовки и достиг успехов в олимпиаде"
       noPlan
       illustration={{
         imgSrc: "./illustrations/advice/hero-illustration.png",

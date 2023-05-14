@@ -36,12 +36,17 @@ button {
 
 @media (max-width: 1200px) {
   html {
+    font-size: 14.5px;
+  }
+}
+@media (max-width: 400px) {
+  html {
     font-size: 14px;
   }
 }
 @media (max-width: 374px) {
   html {
-    font-size: 13px;
+    font-size: 13.25px;
   }
 }
 

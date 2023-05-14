@@ -26,6 +26,15 @@ const SubPara = ({
         "& li": {
           mt: 0.75,
         },
+        "& .var-blue": {
+          color: "code.variable",
+        },
+        "& .var-red": {
+          color: "code.keyword",
+        },
+        "& .keyword": {
+          color: "code.keyword",
+        },
       }}
     >
       {isList
