@@ -1,0 +1,7 @@
+User-agent: *
+
+Allow: /
+Disallow: /404
+Disallow: /error
+
+Sitemap: https://bloomkicks.github.io/olimp/build/sitemap.xml
