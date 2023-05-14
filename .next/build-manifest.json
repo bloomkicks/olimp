@@ -5,8 +5,8 @@
   "devFiles": [],
   "ampDevFiles": [],
   "lowPriorityFiles": [
-    "static/BM9BdDEFureI4tjHTGSXO/_buildManifest.js",
-    "static/BM9BdDEFureI4tjHTGSXO/_ssgManifest.js"
+    "static/VefwhSDOum5IU2mCytdru/_buildManifest.js",
+    "static/VefwhSDOum5IU2mCytdru/_ssgManifest.js"
   ],
   "rootMainFiles": [],
   "pages": {
@@ -35,7 +35,7 @@
       "static/chunks/framework-2c79e2a64abdb08b.js",
       "static/chunks/main-371faf85487e832a.js",
       "static/chunks/702-9fa5372c859500ad.js",
-      "static/chunks/pages/algorithms-8c2022be10d934e9.js"
+      "static/chunks/pages/algorithms-aff46ec181011f4e.js"
     ],
     "/main": [
       "static/chunks/webpack-d1e5fecf5c46a0ec.js",
@@ -56,7 +56,7 @@
       "static/chunks/framework-2c79e2a64abdb08b.js",
       "static/chunks/main-371faf85487e832a.js",
       "static/chunks/702-9fa5372c859500ad.js",
-      "static/chunks/pages/python-1fd477a7ab6b48d3.js"
+      "static/chunks/pages/python-35de684fe8d11189.js"
     ],
     "/science": [
       "static/chunks/webpack-d1e5fecf5c46a0ec.js",
