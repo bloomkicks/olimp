@@ -29,7 +29,7 @@ const PythonHero = () => {
         { title: "Работа с библиотеками", href: "#libraries" },
       ]}
       illustration={{
-        imgSrc: "./illustrations/python/hero-illustration.png",
+        imgSrc: "/illustrations/python/hero-illustration.png",
         width: 412,
         height: 211,
         sx: { py: 2, opacity: 0.8 },

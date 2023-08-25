@@ -1,7 +1,8 @@
+import Box from "@mui/material/Box";
+
 import Paragraph from "../text-content/Paragraph";
 import SubPara from "../text-content/SubPara";
 import Span from "../text-content/Span";
-import Box from "@mui/material/Box";
 
 const MainParagraphs = () => {
   return (

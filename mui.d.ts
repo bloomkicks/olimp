@@ -1,3 +1,5 @@
+import { createTheme } from "@mui/material/styles";
+
 interface TextColors {
   default: string;
   bold: string;
@@ -14,8 +16,8 @@ interface CodeColors {
   comment: string;
 }
 
-declare module "@mui/material/styles/createPalette" {
-  interface Palette {
+declare module "@mui/material/styles" {
+  interface PaletteOptions {
     text?: TextColors;
     code?: CodeColors;
   }

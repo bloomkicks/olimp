@@ -45,7 +45,7 @@ const AlgorithmsHero = () => {
         },
       ]}
       illustration={{
-        imgSrc: "./illustrations/algorithms/hero-illustration.png",
+        imgSrc: "/illustrations/algorithms/hero-illustration.png",
         width: 412,
         height: 261,
         alt: "",

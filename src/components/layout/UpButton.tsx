@@ -1,6 +1,7 @@
+import { useState, useEffect } from "react";
+
 import Button from "@mui/material/Button";
 import Box from "@mui/material/Box";
-import { useState, useEffect } from "react";
 
 const UpButton = ({ sx }: { sx: any }) => {
   const [isVisible, setIsVisible] = useState(false);
@@ -51,7 +52,7 @@ const UpButton = ({ sx }: { sx: any }) => {
     >
       <Box
         component="img"
-        src="./general/up-arrow.svg"
+        src="/general/up-arrow.svg"
         alt="Наверх"
         width="80%"
         height="80%"

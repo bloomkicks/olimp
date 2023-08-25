@@ -1,7 +1,8 @@
+import Box from "@mui/material/Box";
+
 import UpButton from "./UpButton";
 import ProgressBar from "./ProgressBar";
 import Header from "./header/Header";
-import Box from "@mui/material/Box";
 
 const Layout = ({ children }: { children: React.ReactNode }) => {
   return (

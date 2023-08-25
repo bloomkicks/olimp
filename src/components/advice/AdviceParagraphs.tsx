@@ -1,5 +1,6 @@
-import Paragraph from "../text-content/Paragraph";
 import Box from "@mui/material/Box";
+
+import Paragraph from "../text-content/Paragraph";
 import Span from "../text-content/Span";
 import SubPara from "../text-content/SubPara";
 

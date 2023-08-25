@@ -1,7 +1,9 @@
 import type { DataFormats } from "@/types/exercise-props";
+
 import Typography from "@mui/material/Typography";
-import Span from "@/components/text-content/Span";
 import Box from "@mui/material/Box";
+
+import Span from "@/components/text-content/Span";
 
 const DataFormats = (dataFormats: DataFormats) => {
   return (

@@ -8,7 +8,7 @@ const PracticeHero = () => {
       description="Практика играет огромную роль в успехе. Именно поэтому мы разберем несколько задач, применив накопленные знания"
       noPlan
       illustration={{
-        imgSrc: "./illustrations/practice/hero-illustration.png",
+        imgSrc: "/illustrations/practice/hero-illustration.png",
         width: 412,
         height: 248,
         sx: { opacity: 0.95, mb: -1 },

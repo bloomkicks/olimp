@@ -1,7 +1,8 @@
+import Box from "@mui/material/Box";
+
 import Link from "next/link";
 import Typography from "@mui/material/Typography";
 import Stack from "@mui/material/Stack";
-import Box from "@mui/material/Box";
 
 const Plan = ({
   title,

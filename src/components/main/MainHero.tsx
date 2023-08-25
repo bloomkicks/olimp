@@ -17,7 +17,7 @@ const MainHero = () => {
         { title: "Советы и наставления по подготовке" },
       ]}
       illustration={{
-        imgSrc: "./illustrations/main/hero-illustration.png",
+        imgSrc: "/illustrations/main/hero-illustration.png",
         width: 412,
         height: 264,
         alt: "",

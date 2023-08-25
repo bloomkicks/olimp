@@ -1,7 +1,8 @@
 {
   "name": "olimp",
-  "version": "0.1.0",
-  "private": true,
+  "version": "1.0.1",
+  "private": false,
+  "license": "MIT",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -13,20 +14,20 @@
     "@emotion/react": "^11.10.6",
     "@emotion/styled": "^11.10.6",
     "@mui/material": "^5.12.0",
-    "@types/node": "18.15.11",
-    "@types/react": "18.0.35",
-    "@types/react-dom": "18.0.11",
-    "eslint": "8.38.0",
-    "eslint-config-next": "13.3.0",
     "next": "13.3.0",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "react-transition-group": "^4.4.5",
-    "typescript": "5.0.4"
+    "react-transition-group": "^4.4.5"
   },
   "devDependencies": {
-    "css-minimizer-webpack-plugin": "^5.0.0",
+    "typescript": "^5.2.2",
+    "@types/node": "^20.5.6",
+    "@types/react": "^18.2.21",
+    "@types/react-dom": "^18.2.7",
     "prettier": "^2.8.8",
+    "eslint": "^8.47.0",
+    "eslint-config-next": "^13.4.19",
+    "css-minimizer-webpack-plugin": "^5.0.0",
     "terser-webpack-plugin": "^5.3.8"
   }
 }

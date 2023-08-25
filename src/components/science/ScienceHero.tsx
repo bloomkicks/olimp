@@ -16,7 +16,7 @@ const ScienceHero = () => {
         { title: "Законы логики", href: "#logic-laws" },
       ]}
       illustration={{
-        imgSrc: "./illustrations/science/hero-illustration.png",
+        imgSrc: "/illustrations/science/hero-illustration.png",
         width: 412,
         height: 307,
         sx: { mb: -4 },

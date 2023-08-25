@@ -10,6 +10,7 @@ const DefaultHead = () => {
         name="description"
         content="В этом пособии вы найдете последовательный план обучения, понятные объяснения и ссылки на полезные учебные ресурсы. Всё что нужно для подготвки к олимпиаде по информатике"
       />
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
     </Head>
   );
 };

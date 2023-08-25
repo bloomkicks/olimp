@@ -1,8 +1,9 @@
-import Roadmap from "./Roadmap";
-import Transition from "react-transition-group/Transition";
 import Paper from "@mui/material/Paper";
 import Box from "@mui/material/Box";
 import Drawer from "@mui/material/Drawer";
+import Transition from "react-transition-group/Transition";
+
+import Roadmap from "./Roadmap";
 
 const NavMenu = ({ open, onClose }: { open: boolean; onClose: () => void }) => {
   return (

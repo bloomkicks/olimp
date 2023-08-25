@@ -1,6 +1,7 @@
 import getTextSpanType from "@/features/get-text-span-type";
-import Link from "next/link";
+
 import Typography from "@mui/material/Typography";
+import Link from "next/link";
 
 const Span = ({
   children,
@@ -22,8 +23,8 @@ const Span = ({
     <Typography
       component={
         type === "link"
-          ? ({ children, ...props }) => (
-              <Link href={href} {...props}>
+          ? ({ children, ...props }: { children: any }) => (
+              <Link key={href} href={href!} {...props}>
                 {children}
               </Link>
             )

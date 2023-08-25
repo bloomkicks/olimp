@@ -1,11 +1,13 @@
-import Link from "next/link";
-import NavMenu from "./NavMenu";
 import { useState } from "react";
-import Image from "next/image";
-import MenuSetter from "./MenuSetter";
+
 import Toolbar from "@mui/material/Toolbar";
 import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
+import Image from "next/image";
+import Link from "next/link";
+
+import MenuSetter from "./MenuSetter";
+import NavMenu from "./NavMenu";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -36,7 +38,7 @@ const Header = () => {
       >
         <Box
           component={Link}
-          href="/main"
+          href="/"
           sx={{
             position: "relative",
             bottom: 1.5,
@@ -48,7 +50,7 @@ const Header = () => {
         >
           <Image
             unoptimized
-            src="./long-logo.png"
+            src="/long-logo.png"
             alt="ОЛИМП"
             width={149.5}
             height={42.5}

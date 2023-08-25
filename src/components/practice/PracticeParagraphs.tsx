@@ -1,4 +1,6 @@
 import Typography from "@mui/material/Typography";
+import Box from "@mui/material/Box";
+
 import DataFormats from "./exercise/DataFormats";
 import Description from "./exercise/Description";
 import Solution from "./exercise/Solution";
@@ -6,7 +8,6 @@ import Tests from "./exercise/Tests";
 import Paragraph from "../text-content/Paragraph";
 import SubPara from "../text-content/SubPara";
 import Span from "../text-content/Span";
-import Box from "@mui/material/Box";
 
 const PracticeParagraphs = () => {
   return (
