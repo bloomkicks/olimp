@@ -18,6 +18,11 @@
       "@/*": ["./src/*"]
     }
   },
-  "include": ["mui.d.ts", "next-env.d.ts", "**/*.ts", "**/*.tsx", "src/components/layout/ThemeProvider.jsx"],
+  "include": [
+    "next-env.d.ts",
+    "mui.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+  ],
   "exclude": ["node_modules"]
 }
