@@ -5,43 +5,43 @@
   "devFiles": [],
   "ampDevFiles": [],
   "lowPriorityFiles": [
-    "static/NSDq_OE4ervfrGGYj0vXb/_buildManifest.js",
-    "static/NSDq_OE4ervfrGGYj0vXb/_ssgManifest.js"
+    "static/NSVPx-k7MtX2Yi1bhhges/_buildManifest.js",
+    "static/NSVPx-k7MtX2Yi1bhhges/_ssgManifest.js"
   ],
   "rootMainFiles": [],
   "pages": {
     "/": [
-      "static/chunks/main-9ff294b6130f3d0f.js",
-      "static/chunks/pages/index-f3987de1765656ba.js"
+      "static/chunks/main-843a60af6f2a630f.js",
+      "static/chunks/pages/index-325f774c35de7a2c.js"
     ],
     "/_app": [
-      "static/chunks/main-9ff294b6130f3d0f.js",
+      "static/chunks/main-843a60af6f2a630f.js",
       "static/css/97eb4b9cfdeb884e.css",
-      "static/chunks/pages/_app-4d874491b1c8c6fb.js"
+      "static/chunks/pages/_app-ad81a73d069722ed.js"
     ],
     "/_error": [
-      "static/chunks/main-9ff294b6130f3d0f.js",
+      "static/chunks/main-843a60af6f2a630f.js",
       "static/chunks/pages/_error-8e169fea18a0814f.js"
     ],
     "/advice": [
-      "static/chunks/main-9ff294b6130f3d0f.js",
-      "static/chunks/pages/advice-0c4cc70f671df0d2.js"
+      "static/chunks/main-843a60af6f2a630f.js",
+      "static/chunks/pages/advice-166892453dcd06af.js"
     ],
     "/algorithms": [
-      "static/chunks/main-9ff294b6130f3d0f.js",
-      "static/chunks/pages/algorithms-996aad55f9d73abe.js"
+      "static/chunks/main-843a60af6f2a630f.js",
+      "static/chunks/pages/algorithms-bc29d389ba178b0e.js"
     ],
     "/practice": [
-      "static/chunks/main-9ff294b6130f3d0f.js",
-      "static/chunks/pages/practice-f22a396f2fd18394.js"
+      "static/chunks/main-843a60af6f2a630f.js",
+      "static/chunks/pages/practice-44a7a584c8d35435.js"
     ],
     "/python": [
-      "static/chunks/main-9ff294b6130f3d0f.js",
-      "static/chunks/pages/python-c27fd6f9ed5be8bc.js"
+      "static/chunks/main-843a60af6f2a630f.js",
+      "static/chunks/pages/python-481e6c068df3d9c7.js"
     ],
     "/science": [
-      "static/chunks/main-9ff294b6130f3d0f.js",
-      "static/chunks/pages/science-e68dfbe82765114e.js"
+      "static/chunks/main-843a60af6f2a630f.js",
+      "static/chunks/pages/science-bfbf7bf721aa6b52.js"
     ]
   },
   "ampFirstPages": []

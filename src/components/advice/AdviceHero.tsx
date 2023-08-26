@@ -1,4 +1,4 @@
-import HeroSection from "../layout/hero-section/HeroSection";
+import HeroSection from "../general-page/hero-section/HeroSection";
 
 const AdviceHero = () => {
   return (
@@ -8,7 +8,9 @@ const AdviceHero = () => {
       description="Услышьте советы тех, кто уже прошел тернистый путь подготовки и достиг успехов в олимпиаде"
       noPlan
       illustration={{
-        imgSrc: "/illustrations/advice/hero-illustration.png",
+        imgSrc:
+          process.env.ASSET_PREFIX +
+          "/illustrations/advice/hero-illustration.png",
         width: 412,
         height: 259,
         alt: "",

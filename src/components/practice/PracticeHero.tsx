@@ -1,4 +1,4 @@
-import HeroSection from "../layout/hero-section/HeroSection";
+import HeroSection from "../general-page/hero-section/HeroSection";
 
 const PracticeHero = () => {
   return (
@@ -8,7 +8,9 @@ const PracticeHero = () => {
       description="Практика играет огромную роль в успехе. Именно поэтому мы разберем несколько задач, применив накопленные знания"
       noPlan
       illustration={{
-        imgSrc: "/illustrations/practice/hero-illustration.png",
+        imgSrc:
+          process.env.ASSET_PREFIX +
+          "/illustrations/practice/hero-illustration.png",
         width: 412,
         height: 248,
         sx: { opacity: 0.95, mb: -1 },

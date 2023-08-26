@@ -1,14 +1,20 @@
 import "@/styles/globals.css";
 import type { AppProps } from "next/app";
 
-import DefaultHead from "@/components/head/DefaultHead";
+import Head from "next/head";
+
 import Layout from "@/components/layout/Layout";
 import ThemeProvider from "@/components/layout/ThemeProvider";
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
     <>
-      <DefaultHead />
+      <Head>
+        <meta
+          name="viewport"
+          content="width=device-width,initial-scale=1"
+        />
+      </Head>
       <ThemeProvider>
         <Layout>
           <Component {...pageProps} />

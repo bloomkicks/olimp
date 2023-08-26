@@ -1,9 +1,9 @@
-import type { Tests } from "@/types/exercise-props";
+import type { Tests } from "@/models/exercise-props";
 
 import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
 
-import Span from "@/components/text-content/Span";
+import TextSpan from "@/components/general-page/chapter-section/TextSpan";
 
 const Tests = ({ tests }: { tests: Tests }) => {
   return (
@@ -13,14 +13,14 @@ const Tests = ({ tests }: { tests: Tests }) => {
         <Box key={i}>
           {test.in.map((variable, i, a) => (
             <Typography key={i} display="inline">
-              <Span type={i === 0 ? "var-red" : "var-green"}>
+              <TextSpan type={i === 0 ? "var-red" : "var-green"}>
                 {variable.name}
-              </Span>{" "}
+              </TextSpan>{" "}
               = {variable.value},{" "}
             </Typography>
           ))}
           <Typography display="inline">
-            <Span type="var-blue">{test.out.name || "Вывод"}</Span> ={" "}
+            <TextSpan type="var-blue">{test.out.name || "Вывод"}</TextSpan> ={" "}
             {test.out.value}
           </Typography>
         </Box>

@@ -1,42 +1,42 @@
 import Box from "@mui/material/Box";
 
-import Paragraph from "../text-content/Paragraph";
-import Span from "../text-content/Span";
-import SubPara from "../text-content/SubPara";
+import Chapter from "../general-page/chapter-section/Chapter";
+import Paragraph from "../general-page/chapter-section/Paragraph";
+import TextSpan from "../general-page/chapter-section/TextSpan";
 
 const AdviceParagraphs = () => {
   return (
     <Box>
-      <Paragraph title="ОСНОВНЫЕ УЧЕБНЫЕ РЕСУРСЫ">
-        <SubPara>
+      <Chapter title="ОСНОВНЫЕ УЧЕБНЫЕ РЕСУРСЫ">
+        <Paragraph>
           Различные интервью с участниками и победителями олимпиад, а также
           просто советы по подготовке вы можете найти в{" "}
-          <Span
+          <TextSpan
             type="link"
             href="https://spb.hse.ru/ba/dataanalytics/news/530412202.html"
           >
             журнале ВШЭ
-          </Span>
+          </TextSpan>
           ,{" "}
-          <Span
+          <TextSpan
             type="link"
             href="https://media.foxford.ru/articles/tips-winners"
           >
             Фоксфорд
-          </Span>{" "}
+          </TextSpan>{" "}
           или{" "}
-          <Span type="link" href="https://olimpiada.ru/article/744">
+          <TextSpan type="link" href="https://olimpiada.ru/article/744">
             Olimpiada.ru
-          </Span>
+          </TextSpan>
           .
-        </SubPara>
-        <SubPara>
+        </Paragraph>
+        <Paragraph>
           Для удобства, я перечислю несколько важных советов по подготвоке на
           этой странице.
-        </SubPara>
-      </Paragraph>
-      <Paragraph title="Советы и наставления">
-        <SubPara type="ordered-list">
+        </Paragraph>
+      </Chapter>
+      <Chapter title="Советы и наставления">
+        <Paragraph type="ordered-list">
           <ol>
             <li>Начните участвовать и практиковаться как можно раньше</li>
             <li>Не забывайте про отдых и перерывы</li>
@@ -57,8 +57,8 @@ const AdviceParagraphs = () => {
               Внимательнее относитесь к списку принимаемых вузами олимпиад
             </li>
           </ol>
-        </SubPara>
-      </Paragraph>
+        </Paragraph>
+      </Chapter>
     </Box>
   );
 };

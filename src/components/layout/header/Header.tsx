@@ -50,7 +50,7 @@ const Header = () => {
         >
           <Image
             unoptimized
-            src="/long-logo.png"
+            src={process.env.ASSET_PREFIX + "/long-logo.png"}
             alt="ОЛИМП"
             width={149.5}
             height={42.5}

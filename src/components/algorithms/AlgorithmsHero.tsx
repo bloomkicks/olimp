@@ -1,4 +1,4 @@
-import HeroSection from "../layout/hero-section/HeroSection";
+import HeroSection from "../general-page/hero-section/HeroSection";
 
 const AlgorithmsHero = () => {
   return (
@@ -31,7 +31,8 @@ const AlgorithmsHero = () => {
           href: "#unweighted-graph",
         },
         {
-          title: "Взвешенный граф и алгоритмы нахождения кратчайшего пути",
+          title:
+            "Взвешенный граф и алгоритмы нахождения кратчайшего пути",
           href: "#weighted-graph",
         },
         {
@@ -45,7 +46,9 @@ const AlgorithmsHero = () => {
         },
       ]}
       illustration={{
-        imgSrc: "/illustrations/algorithms/hero-illustration.png",
+        imgSrc:
+          process.env.ASSET_PREFIX +
+          "/illustrations/algorithms/hero-illustration.png",
         width: 412,
         height: 261,
         alt: "",

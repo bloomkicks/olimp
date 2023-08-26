@@ -1,4 +1,7 @@
-import { createTheme, ThemeProvider as Provider } from "@mui/material/styles";
+import {
+  createTheme,
+  ThemeProvider as Provider,
+} from "@mui/material/styles";
 import CssBaseline from "@mui/material/CssBaseline";
 
 const heroFontFam = "Manrope, sans-serif";
@@ -55,16 +58,6 @@ const theme = createTheme({
     primary: {
       main: "#074FA5",
     },
-    text: {
-      default: "#000000",
-      highlight: "#CF7A16",
-      variable: "#074FA5",
-      result: "#AE3E3E",
-      keyword: "#A06CDF",
-      "var-red": "#AE3E3E",
-      "var-blue": "#074FA5",
-      "var-green": "#1D9938",
-    },
     code: {
       default: "#FFFFFF",
       variable: "#B9D4FD",
@@ -72,6 +65,15 @@ const theme = createTheme({
       value: "#92E277",
       keyword: "#D0B8FF",
       comment: "#B7FFF2",
+    },
+    text: {
+      highlight: "#CF7A16",
+      variable: "#074FA5",
+      result: "#AE3E3E",
+      keyword: "#A06CDF",
+      "var-red": "#AE3E3E",
+      "var-blue": "#074FA5",
+      "var-green": "#1D9938",
     },
     background: {
       default: "#FFFFFF",

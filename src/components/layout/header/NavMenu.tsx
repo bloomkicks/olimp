@@ -1,3 +1,5 @@
+import { useEffect } from "react";
+
 import Paper from "@mui/material/Paper";
 import Box from "@mui/material/Box";
 import Drawer from "@mui/material/Drawer";
@@ -5,12 +7,27 @@ import Transition from "react-transition-group/Transition";
 
 import Roadmap from "./Roadmap";
 
-const NavMenu = ({ open, onClose }: { open: boolean; onClose: () => void }) => {
+const NavMenu = ({
+  open,
+  onClose,
+}: {
+  open: boolean;
+  onClose: () => void;
+}) => {
+  useEffect(() => {
+    document.body.style.overflow = open ? "hidden" : "auto";
+    if (document.documentElement)
+      document.documentElement.style.overflow = open
+        ? "hidden"
+        : "auto";
+  }, [open]);
+
   return (
     <Drawer
       open={open}
       onClose={onClose}
       keepMounted
+      disableScrollLock
       anchor="right"
       sx={{
         zIndex: 78,

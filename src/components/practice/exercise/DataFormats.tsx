@@ -1,9 +1,9 @@
-import type { DataFormats } from "@/types/exercise-props";
+import type { DataFormats } from "@/models/exercise-props";
 
 import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
 
-import Span from "@/components/text-content/Span";
+import TextSpan from "@/components/general-page/chapter-section/TextSpan";
 
 const DataFormats = (dataFormats: DataFormats) => {
   return (
@@ -12,13 +12,13 @@ const DataFormats = (dataFormats: DataFormats) => {
       <Typography variant="h4">Входные данные</Typography>
       {dataFormats.in.map((variable, i) => (
         <Typography key={i}>
-          <Span>{variable.name}</Span> - {variable.description}
+          <TextSpan>{variable.name}</TextSpan> - {variable.description}
         </Typography>
       ))}
       <Typography variant="h4">Выходные данные</Typography>
       {dataFormats.out.map((variable, i) => (
         <Typography key={i}>
-          <Span>{variable.name}</Span> - {variable.description}
+          <TextSpan>{variable.name}</TextSpan> - {variable.description}
         </Typography>
       ))}
     </Box>

@@ -5,6 +5,10 @@ interface TextColors {
   bold: string;
   variable: string;
   result: string;
+  highlight: string;
+  "var-red": string;
+  "var-blue": string;
+  "var-green": string;
 }
 
 interface CodeColors {
@@ -12,13 +16,13 @@ interface CodeColors {
   variable: string;
   function: string;
   value: string;
-  keywords: string;
+  keyword: string;
   comment: string;
 }
 
 declare module "@mui/material/styles" {
   interface PaletteOptions {
-    text?: TextColors;
-    code?: CodeColors;
+    text: TextColors;
+    code: CodeColors;
   }
 }

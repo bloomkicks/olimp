@@ -18,6 +18,6 @@
       "@/*": ["./src/*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
+  "include": ["mui.d.ts", "next-env.d.ts", "**/*.ts", "**/*.tsx", "src/components/layout/ThemeProvider.jsx"],
   "exclude": ["node_modules"]
 }
