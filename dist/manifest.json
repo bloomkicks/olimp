@@ -2,34 +2,35 @@
   "name": "Олимп - онлайн пособие по подготовке к олимпиадам по информатике",
   "short_name": "Олимп",
   "description": "В этом пособии вы найдете всё, что нужно для подготвки к олимпиадам по информатике: последовательный план обучения, понятные объяснения, ссылки на полезные учебные ресурсы и многое другое.",
+  "lang": "ru",
   "icons": [
     {
-      "src": "/favicon.ico",
+      "src": "/olimp/dist/favicon.ico",
       "type": "image/x-icon",
       "sizes": "128x128"
     },
     {
-      "src": "/favicon.png",
+      "src": "/olimp/dist/favicon.png",
       "type": "image/png",
       "sizes": "128x128"
     },
     {
-      "src": "/apple-touch-icon.png",
+      "src": "/olimp/dist/apple-touch-icon.png",
       "type": "image/png",
       "sizes": "180x180"
     },
     {
-      "src": "/google-chrome-192x192.png",
+      "src": "/olimp/dist/google-chrome-192x192.png",
       "type": "image/png",
       "sizes": "192x192"
     },
     {
-      "src": "/google-chrome-512x512.png",
+      "src": "/olimp/dist/google-chrome-512x512.png",
       "type": "image/png",
       "sizes": "512x512"
     },
     {
-      "src": "/favicon-64x64.png",
+      "src": "/olimp/dist/favicon-64x64.png",
       "type": "image/png",
       "sizes": "64x64"
     }
@@ -39,25 +40,25 @@
       "name": "Python / Олимп - онлайн пособие по подготовке к олимпиадам по информатике",
       "short_name": "Python / Олимп",
       "description": "Начинающим лучше других языков подойдет Python с простым синтаксисом и широким функционалом",
-      "url": "/python"
+      "url": "/olimp/dist/python"
     },
     {
       "name": "Алгоритмы / Олимп - онлайн пособие по подготовке к олимпиадам по информатике",
       "short_name": "Алгоритмы / Олимп",
       "description": "Знание алгоритмов и структур данных позволяет найти самый эффективный способ решения задачи",
-      "url": "/algorithms"
+      "url": "/olimp/dist/algorithms"
     },
     {
       "name": "Компьютерные науки / Олимп - онлайн пособие по подготовке к олимпиадам по информатике",
       "short_name": "Компьютерные науки / Олимп",
       "description": "Ознакомленность с понятиями этих наук очень поможет вам в решении задач большинства олимпиад по информатике",
-      "url": "/science"
+      "url": "/olimp/dist/science"
     },
     {
       "name": "Практика / Олимп - онлайн пособие по подготовке к олимпиадам по информатике",
       "short_name": "Практика / Олимп",
       "description": "Практика играет огромную роль в успехе. Именно поэтому мы разберем несколько задач, применив накопленные знания",
-      "url": "/practice"
+      "url": "/olimp/dist/practice"
     },
     {
       "name": "Советы / Олимп - онлайн пособие по подготовке к олимпиадам по информатике",
@@ -66,8 +67,8 @@
       "url": "/advice"
     }
   ],
-  "scope": "/",
-  "start_url": "/",
+  "scope": "/olimp/dist/",
+  "start_url": "/olimp/dist/",
   "display": "standalone",
   "theme_color": "#074FA5",
   "background_color": "#FFFFFF"

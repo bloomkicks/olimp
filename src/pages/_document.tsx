@@ -1,60 +1,57 @@
 import Script from "next/script";
 import { Html, Head, Main, NextScript } from "next/document";
 
+const ASSET_PREFIX = process.env.ASSET_PREFIX || "/olimp/dist";
+
 export default function Document() {
   return (
     <Html lang="ru">
       <Head>
         <meta name="charset" content="UTF-8" />
         <meta name="theme-color" content="#074FA5" />
-        <link
-          rel="manifest"
-          href={process.env.ASSET_PREFIX + "/manifest.json"}
-        />
+        <link rel="manifest" href={ASSET_PREFIX + "/manifest.json"} />
         <link
           rel="sitemap"
           type="application/xml"
           title="Sitemap"
-          href={process.env.ASSET_PREFIX + "/sitemap.xml"}
+          href={ASSET_PREFIX + "/sitemap.xml"}
         />
         {/* ICONS */}
         <link
           rel="icon"
           type="image/x-icon"
           sizes="128x128"
-          href={process.env.ASSET_PREFIX + "/favicon.ico"}
+          href={ASSET_PREFIX + "/favicon.ico"}
         />
         <link
           rel="icon"
           type="image/png"
           sizes="128x128"
-          href={process.env.ASSET_PREFIX + "/favicon.png"}
+          href={ASSET_PREFIX + "/favicon.png"}
         />
         <link
           rel="icon"
           type="image/png"
           sizes="180x180"
-          href={process.env.ASSET_PREFIX + "/apple-touch-icon.png"}
+          href={ASSET_PREFIX + "/apple-touch-icon.png"}
         />
         <link
           rel="apple-touch-icon"
           type="image/png"
           sizes="180x180"
-          href={process.env.ASSET_PREFIX + "/apple-touch-icon.png"}
+          href={ASSET_PREFIX + "/apple-touch-icon.png"}
         />
         <link
           rel="icon"
           type="image/png"
           sizes="192x192"
-          href={
-            process.env.ASSET_PREFIX + "/google-chrome-192x192.png"
-          }
+          href={ASSET_PREFIX + "/google-chrome-192x192.png"}
         />
         <link
           rel="icon"
           type="image/png"
           sizes="64x64"
-          href={process.env.ASSET_PREFIX + "/favicon-64x64.png"}
+          href={ASSET_PREFIX + "/favicon-64x64.png"}
         />
         {/* ICONS */}
         {/* ENGINES */}
@@ -84,12 +81,14 @@ export default function Document() {
         `}</Script>
         {/* ENGINES */}
         {/* <Script type="text/javascript" id="">
-          {`if (navigator.hasOwnProperty("serviceWorker")) {
+          {`
             window.addEventListener("load", () => {
-              navigator.serviceWorker.register("/olimp/dist/sw.js")
-              console.log(navigator.serviceWorker)
+              if (navigator.hasOwnProperty("serviceWorker")) {
+                navigator.serviceWorker.register("/sw.js")
+                console.log(navigator.serviceWorker)
+              }
             })
-          }`}
+          `}
         </Script> */}
       </Head>
       <body>
