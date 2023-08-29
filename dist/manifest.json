@@ -30,6 +30,11 @@
       "sizes": "512x512"
     },
     {
+      "src": "/olimp/dist/favicon-96x96.png",
+      "type": "image/png",
+      "sizes": "96x96"
+    },
+    {
       "src": "/olimp/dist/favicon-64x64.png",
       "type": "image/png",
       "sizes": "64x64"
@@ -64,7 +69,7 @@
       "name": "Советы / Олимп - онлайн пособие по подготовке к олимпиадам по информатике",
       "short_name": "Советы / Олимп",
       "description": "Услышьте советы тех, кто уже прошел тернистый путь подготовки и достиг успехов в олимпиаде",
-      "url": "/advice"
+      "url": "/olimp/dist/advice"
     }
   ],
   "scope": "/olimp/dist/",

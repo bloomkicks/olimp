@@ -7,7 +7,7 @@ export default function Document() {
   return (
     <Html lang="ru">
       <Head>
-        <meta name="charset" content="UTF-8" />
+        <meta charSet="UTF-8" />
         <meta name="theme-color" content="#074FA5" />
         <link rel="manifest" href={ASSET_PREFIX + "/manifest.json"} />
         <link
@@ -46,6 +46,12 @@ export default function Document() {
           type="image/png"
           sizes="192x192"
           href={ASSET_PREFIX + "/google-chrome-192x192.png"}
+        />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="96x96"
+          href={ASSET_PREFIX + "/favicon-96x96.png"}
         />
         <link
           rel="icon"
