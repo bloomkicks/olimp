@@ -7,49 +7,54 @@ export default function Document() {
       <Head>
         <meta name="charset" content="UTF-8" />
         <meta name="theme-color" content="#074FA5" />
-        <link rel="manifest" href="/manifest.json" />
+        <link
+          rel="manifest"
+          href={process.env.ASSET_PREFIX + "/manifest.json"}
+        />
         <link
           rel="sitemap"
           type="application/xml"
           title="Sitemap"
-          href="/sitemap.xml"
+          href={process.env.ASSET_PREFIX + "/sitemap.xml"}
         />
         {/* ICONS */}
         <link
           rel="icon"
           type="image/x-icon"
           sizes="128x128"
-          href="/favicon.ico"
+          href={process.env.ASSET_PREFIX + "/favicon.ico"}
         />
         <link
           rel="icon"
           type="image/png"
           sizes="128x128"
-          href="/favicon.png"
+          href={process.env.ASSET_PREFIX + "/favicon.png"}
         />
         <link
           rel="icon"
           type="image/png"
           sizes="180x180"
-          href="/apple-touch-icon.png"
+          href={process.env.ASSET_PREFIX + "/apple-touch-icon.png"}
         />
         <link
           rel="apple-touch-icon"
           type="image/png"
           sizes="180x180"
-          href="/apple-touch-icon.png"
+          href={process.env.ASSET_PREFIX + "/apple-touch-icon.png"}
         />
         <link
           rel="icon"
           type="image/png"
           sizes="192x192"
-          href="/google-chrome-192x192.png"
+          href={
+            process.env.ASSET_PREFIX + "/google-chrome-192x192.png"
+          }
         />
         <link
           rel="icon"
           type="image/png"
           sizes="64x64"
-          href="/favicon-64x64.png"
+          href={process.env.ASSET_PREFIX + "/favicon-64x64.png"}
         />
         {/* ICONS */}
         {/* ENGINES */}
@@ -63,7 +68,7 @@ export default function Document() {
           href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;600&family=Manrope:wght@800&family=Roboto:wght@300;400;700&display=swap"
           rel="stylesheet"
         ></link>
-        <Script type="text/javascript" id="yandex-metrica" async>{`
+        <Script type="text/javascript" id="yandex-metrica">{`
             (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
             m[i].l=1*new Date();
             for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
@@ -78,6 +83,14 @@ export default function Document() {
             });
         `}</Script>
         {/* ENGINES */}
+        {/* <Script type="text/javascript" id="">
+          {`if (navigator.hasOwnProperty("serviceWorker")) {
+            window.addEventListener("load", () => {
+              navigator.serviceWorker.register("/olimp/dist/sw.js")
+              console.log(navigator.serviceWorker)
+            })
+          }`}
+        </Script> */}
       </Head>
       <body>
         <noscript>

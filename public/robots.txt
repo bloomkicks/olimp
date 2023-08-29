@@ -5,4 +5,4 @@ Disallow: /404
 Disallow: /505
 Disallow: /error
 
-Sitemap: https://bloomkicks.github.io/olimp/build/sitemap.xml
+Sitemap: https://bloomkicks.github.io/olimp/dist/sitemap.xml

@@ -4,6 +4,8 @@ const CssMinimizerPlugin = require("css-minimizer-webpack-plugin");
 const TerserPlugin = require("terser-webpack-plugin");
 const withPWA = require("next-pwa")({
   dest: "public",
+  scope: "/olimp/dist",
+  sw: "sw.js",
 });
 
 const isDev = process.env.NODE_ENV === "development";
