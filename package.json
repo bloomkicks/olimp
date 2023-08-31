@@ -1,13 +1,18 @@
 {
   "name": "olimp",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "private": false,
   "license": "MIT",
+  "browserslist": [
+    "cover 99%",
+    "not dead"
+  ],
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
+    "test": "cypress open",
     "prettier": "prettier --write src/**"
   },
   "dependencies": {

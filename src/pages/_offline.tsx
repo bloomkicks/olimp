@@ -17,7 +17,7 @@ const OfflinePage = () => {
       </Head>
       <Box mt={{ xs: 6, md: 10 }} mx={{ xs: 3, sm: 6 }}>
         <Typography variant="h1" mb={2}>
-          Не удалось загрузить страницу
+          Не удалось обнаружить подключение к сети
         </Typography>
         <Typography variant="subtitle1">
           Проверьте своё подключение к сети или попробуйте позже

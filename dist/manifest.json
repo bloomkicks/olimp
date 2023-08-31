@@ -7,37 +7,44 @@
     {
       "src": "/olimp/dist/favicon.ico",
       "type": "image/x-icon",
-      "sizes": "128x128"
+      "sizes": "128x128",
+      "purpose": "any maskable"
     },
     {
       "src": "/olimp/dist/favicon.png",
       "type": "image/png",
-      "sizes": "128x128"
+      "sizes": "128x128",
+      "purpose": "any maskable"
     },
     {
       "src": "/olimp/dist/apple-touch-icon.png",
       "type": "image/png",
-      "sizes": "180x180"
+      "sizes": "180x180",
+      "purpose": "any maskable"
     },
     {
       "src": "/olimp/dist/google-chrome-192x192.png",
       "type": "image/png",
-      "sizes": "192x192"
+      "sizes": "192x192",
+      "purpose": "any maskable"
     },
     {
       "src": "/olimp/dist/google-chrome-512x512.png",
       "type": "image/png",
-      "sizes": "512x512"
+      "sizes": "512x512",
+      "purpose": "any maskable"
     },
     {
       "src": "/olimp/dist/favicon-96x96.png",
       "type": "image/png",
-      "sizes": "96x96"
+      "sizes": "96x96",
+      "purpose": "any maskable"
     },
     {
       "src": "/olimp/dist/favicon-64x64.png",
       "type": "image/png",
-      "sizes": "64x64"
+      "sizes": "64x64",
+      "purpose": "any maskable"
     }
   ],
   "shortcuts": [
