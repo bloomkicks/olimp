@@ -27,31 +27,35 @@ const MainParagraphs = () => {
         <Paragraph type="bullet-list">
           <Box component="ul">
             <li>
-              <TextSpan type="none bold">IOI</TextSpan> — ежегодная международная
-              олимпиада по информатике среди школьников (Межнар)
+              <TextSpan type="none bold">IOI</TextSpan> — ежегодная
+              международная олимпиада по информатике среди школьников (Межнар)
             </li>
             <li>
-              <TextSpan type="none bold">ВсОШ по информатике</TextSpan> — индивидуальная
-              всероссийская олимпиада школьников по информатике (Всерос).
+              <TextSpan type="none bold">ВсОШ по информатике</TextSpan> —
+              индивидуальная всероссийская олимпиада школьников по информатике
+              (Всерос).
             </li>
             <li>
-              <TextSpan type="none bold">ВКОШП</TextSpan> — всероссийская командная
-              олимпиада школьников по программированию
+              <TextSpan type="none bold">ВКОШП</TextSpan> — всероссийская
+              командная олимпиада школьников по программированию
             </li>
             <li>
-              <TextSpan type="none bold">Технокубок</TextSpan> — ежегодная олимпиада по
-              программированию для учащихся 8–11 классов, организованная МФТИ,
-              МГТУ им. Н. Э. Баумана и компанией Mail.ru Group
+              <TextSpan type="none bold">Технокубок</TextSpan> — ежегодная
+              олимпиада по программированию для учащихся 8–11 классов,
+              организованная МФТИ, МГТУ им. Н. Э. Баумана и компанией Mail.ru
+              Group
             </li>
             <li>
               Межрегиональная олимпиада школьников{" "}
               <TextSpan type="none bold">«Высшая проба»</TextSpan>
             </li>
             <li>
-              <TextSpan type="none bold">Московская олимпиада</TextSpan> школьников
+              <TextSpan type="none bold">Московская олимпиада</TextSpan>{" "}
+              школьников
             </li>
             <li>
-              Олимпиада школьников <TextSpan type="none bold">«Ломоносов»</TextSpan>
+              Олимпиада школьников{" "}
+              <TextSpan type="none bold">«Ломоносов»</TextSpan>
             </li>
             <li>
               Открытая Олимпиада Университета{" "}

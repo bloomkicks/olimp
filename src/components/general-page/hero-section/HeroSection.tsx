@@ -65,7 +65,10 @@ const HeroSection = ({
         <Description title={descTitle} text={description} noPlan={noPlan} />
       </Stack>
       {!noPlan && (
-        <StudyingPlan title={planTitle || "ПЛАН ОБУЧЕНИЯ"} points={planPoints!} />
+        <StudyingPlan
+          title={planTitle || "ПЛАН ОБУЧЕНИЯ"}
+          points={planPoints!}
+        />
       )}
       <HeroDivider />
     </Box>

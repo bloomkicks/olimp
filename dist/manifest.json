@@ -23,13 +23,13 @@
       "purpose": "any maskable"
     },
     {
-      "src": "/olimp/dist/google-chrome-192x192.png",
+      "src": "/olimp/dist/android-chrome-192x192.png",
       "type": "image/png",
       "sizes": "192x192",
       "purpose": "any maskable"
     },
     {
-      "src": "/olimp/dist/google-chrome-512x512.png",
+      "src": "/olimp/dist/android-chrome-512x512.png",
       "type": "image/png",
       "sizes": "512x512",
       "purpose": "any maskable"

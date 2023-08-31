@@ -74,10 +74,10 @@ const PythonParagraphs = () => {
       <Chapter title="2. НАЗНАЧЕНИЕ ПЕРЕМЕННЫХ" id="variables">
         <Paragraph>
           Переменные в программировании - тоже самое, что и в математике. Только
-          вместо <TextSpan type="var-red">x</TextSpan> или <TextSpan type="var-red">y</TextSpan>
-          , мы называем переменную понятнее и можем присваивать ей любые
-          значения, а не только числа. Например, если мы хотим хранить имя
-          пользователя, мы назовём переменную{" "}
+          вместо <TextSpan type="var-red">x</TextSpan> или{" "}
+          <TextSpan type="var-red">y</TextSpan>, мы называем переменную понятнее
+          и можем присваивать ей любые значения, а не только числа. Например,
+          если мы хотим хранить имя пользователя, мы назовём переменную{" "}
           <TextSpan type="var-blue">user_name</TextSpan>.
         </Paragraph>
         <Paragraph>
@@ -122,20 +122,24 @@ const PythonParagraphs = () => {
         </Paragraph>
         <CodeSection>
           <CodeLine type="no-console">
-            <TextSpan type="variable">integer</TextSpan> = <TextSpan>1</TextSpan>
+            <TextSpan type="variable">integer</TextSpan> ={" "}
+            <TextSpan>1</TextSpan>
           </CodeLine>
           <CodeLine type="no-console">
-            <TextSpan type="variable">floating_point</TextSpan> = <TextSpan>0.995</TextSpan>
+            <TextSpan type="variable">floating_point</TextSpan> ={" "}
+            <TextSpan>0.995</TextSpan>
           </CodeLine>
           <CodeLine type="no-console">
             <TextSpan type="variable">string</TextSpan> ={" "}
             <TextSpan>{'"hello, world"'}</TextSpan>
           </CodeLine>
           <CodeLine type="no-console">
-            <TextSpan type="variable">boolean</TextSpan> = <TextSpan>True</TextSpan>
+            <TextSpan type="variable">boolean</TextSpan> ={" "}
+            <TextSpan>True</TextSpan>
           </CodeLine>
           <CodeLine type="no-console">
-            <TextSpan type="variable">nothing</TextSpan> = <TextSpan>None</TextSpan>
+            <TextSpan type="variable">nothing</TextSpan> ={" "}
+            <TextSpan>None</TextSpan>
           </CodeLine>
         </CodeSection>
       </Chapter>
@@ -147,10 +151,12 @@ const PythonParagraphs = () => {
         </Paragraph>
         <CodeSection>
           <CodeLine>
-            <TextSpan type="variable">integer1</TextSpan> = <TextSpan>10</TextSpan>
+            <TextSpan type="variable">integer1</TextSpan> ={" "}
+            <TextSpan>10</TextSpan>
           </CodeLine>
           <CodeLine>
-            <TextSpan type="variable">integer2</TextSpan> = <TextSpan>2</TextSpan>
+            <TextSpan type="variable">integer2</TextSpan> ={" "}
+            <TextSpan>2</TextSpan>
           </CodeLine>
           <CodeLine>
             <TextSpan type="variable">integer1</TextSpan> +{" "}
@@ -169,8 +175,9 @@ const PythonParagraphs = () => {
         </CodeSection>
         <Paragraph>
           Проводить эти операции можно так же, как и в математике - с помощью
-          математических операторов: <TextSpan type="highlight bold">+</TextSpan> -
-          сложение, <TextSpan type="highlight bold">-</TextSpan> - вычитание,{" "}
+          математических операторов:{" "}
+          <TextSpan type="highlight bold">+</TextSpan> - сложение,{" "}
+          <TextSpan type="highlight bold">-</TextSpan> - вычитание,{" "}
           <TextSpan type="highlight bold">*</TextSpan> - умножение,{" "}
           <TextSpan type="highlight bold">/</TextSpan> - деление
         </Paragraph>
@@ -195,29 +202,32 @@ const PythonParagraphs = () => {
         </Paragraph>
         <CodeSection>
           <CodeLine>
-            <TextSpan>def</TextSpan> <TextSpan>sum</TextSpan>(<TextSpan>num1</TextSpan>,{" "}
-            <TextSpan>num2</TextSpan>):
+            <TextSpan>def</TextSpan> <TextSpan>sum</TextSpan>(
+            <TextSpan>num1</TextSpan>, <TextSpan>num2</TextSpan>):
             <CodeLine type="inner">
-              <TextSpan>result</TextSpan> = <TextSpan>num1</TextSpan> + <TextSpan>num2</TextSpan>
+              <TextSpan>result</TextSpan> = <TextSpan>num1</TextSpan> +{" "}
+              <TextSpan>num2</TextSpan>
             </CodeLine>
             <CodeLine type="inner">
               <TextSpan>return</TextSpan> <TextSpan>result</TextSpan>
             </CodeLine>
           </CodeLine>
           <CodeLine>
-            <TextSpan>sum</TextSpan>(<TextSpan>10</TextSpan>, <TextSpan>2</TextSpan>)
+            <TextSpan>sum</TextSpan>(<TextSpan>10</TextSpan>,{" "}
+            <TextSpan>2</TextSpan>)
           </CodeLine>
           <CodeLine type="response">12</CodeLine>
         </CodeSection>
         <Paragraph>
-          Кодовое слово <TextSpan type="keyword">return</TextSpan> возвращает из функции
-          нужное нам значение - <TextSpan type="result">result</TextSpan>. Мы можем
-          присвоить его к переменной и использовать дальше в программе:
+          Кодовое слово <TextSpan type="keyword">return</TextSpan> возвращает из
+          функции нужное нам значение -{" "}
+          <TextSpan type="result">result</TextSpan>. Мы можем присвоить его к
+          переменной и использовать дальше в программе:
         </Paragraph>
         <CodeSection>
           <CodeLine>
-            <TextSpan>result</TextSpan> = <TextSpan>sum</TextSpan>(<TextSpan>10</TextSpan>,{" "}
-            <TextSpan>2</TextSpan>)
+            <TextSpan>result</TextSpan> = <TextSpan>sum</TextSpan>(
+            <TextSpan>10</TextSpan>, <TextSpan>2</TextSpan>)
           </CodeLine>
           <CodeLine>
             <TextSpan>print</TextSpan>(<TextSpan>result</TextSpan>)
@@ -228,14 +238,16 @@ const PythonParagraphs = () => {
           Если же нам надо просто выполнить какие-нибудь операции без
           возвращения результатов, то таким же образом мы можем назначить
           процедуру. Она отличается от функции только отсутствием кодового слова{" "}
-          <TextSpan>return</TextSpan>. В Питоне принято писать в таком случае слово{" "}
-          <TextSpan>pass</TextSpan>:
+          <TextSpan>return</TextSpan>. В Питоне принято писать в таком случае
+          слово <TextSpan>pass</TextSpan>:
         </Paragraph>
         <CodeSection>
           <CodeLine>
-            <TextSpan>def</TextSpan> <TextSpan>yell</TextSpan>(<TextSpan>str</TextSpan>):
+            <TextSpan>def</TextSpan> <TextSpan>yell</TextSpan>(
+            <TextSpan>str</TextSpan>):
             <CodeLine type="inner">
-              <TextSpan>result</TextSpan> = <TextSpan>str</TextSpan>.<TextSpan>upper</TextSpan>()
+              <TextSpan>result</TextSpan> = <TextSpan>str</TextSpan>.
+              <TextSpan>upper</TextSpan>()
             </CodeLine>
             <CodeLine type="inner">
               <TextSpan>print</TextSpan>(<TextSpan>result</TextSpan>){" "}
@@ -263,7 +275,8 @@ const PythonParagraphs = () => {
         </Paragraph>
         <CodeSection>
           <CodeLine>
-            <TextSpan>if</TextSpan> <TextSpan>age</TextSpan> {">="} <TextSpan>18</TextSpan>:
+            <TextSpan>if</TextSpan> <TextSpan>age</TextSpan> {">="}{" "}
+            <TextSpan>18</TextSpan>:
             <CodeLine type="inner">
               <TextSpan>access</TextSpan> = <TextSpan>True</TextSpan>
             </CodeLine>
@@ -300,7 +313,8 @@ const PythonParagraphs = () => {
         </Paragraph>
         <CodeSection>
           <CodeLine>
-            <TextSpan>if</TextSpan> <TextSpan>age</TextSpan> {">="} <TextSpan>18</TextSpan>:
+            <TextSpan>if</TextSpan> <TextSpan>age</TextSpan> {">="}{" "}
+            <TextSpan>18</TextSpan>:
             <CodeLine type="inner">
               <TextSpan>access</TextSpan> = <TextSpan>True</TextSpan>
             </CodeLine>
@@ -319,7 +333,8 @@ const PythonParagraphs = () => {
         </Paragraph>
         <CodeSection>
           <CodeLine type="centered">
-            <TextSpan>access</TextSpan> = <TextSpan>age</TextSpan> {">="} <TextSpan>18</TextSpan>
+            <TextSpan>access</TextSpan> = <TextSpan>age</TextSpan> {">="}{" "}
+            <TextSpan>18</TextSpan>
           </CodeLine>
         </CodeSection>
       </Chapter>
@@ -330,15 +345,17 @@ const PythonParagraphs = () => {
         </Paragraph>
         <Paragraph>
           Например, если мы хотим досчитать до 100, то вместо того, чтобы
-          вручную писать команду <TextSpan>print</TextSpan> для каждого числа, можно
-          просто запустить цикл и добавлять к начальному числу по единице, пока
-          оно не станет ровно 100:
+          вручную писать команду <TextSpan>print</TextSpan> для каждого числа,
+          можно просто запустить цикл и добавлять к начальному числу по единице,
+          пока оно не станет ровно 100:
         </Paragraph>
         <CodeSection>
           <CodeLine>
-            <TextSpan>while</TextSpan> <TextSpan>num</TextSpan> {"<="} <TextSpan>100</TextSpan>:
+            <TextSpan>while</TextSpan> <TextSpan>num</TextSpan> {"<="}{" "}
+            <TextSpan>100</TextSpan>:
             <CodeLine type="inner">
-              <TextSpan>num</TextSpan> = <TextSpan>num</TextSpan> + <TextSpan>1</TextSpan>
+              <TextSpan>num</TextSpan> = <TextSpan>num</TextSpan> +{" "}
+              <TextSpan>1</TextSpan>
             </CodeLine>
             <CodeLine type="inner">
               <TextSpan>print</TextSpan>(<TextSpan>num</TextSpan>)
@@ -354,11 +371,11 @@ const PythonParagraphs = () => {
           <TextSpan type="keyword">while</TextSpan>,{" "}
           <TextSpan type="keyword">do ... while</TextSpan>,{" "}
           <TextSpan type="keyword">for</TextSpan>. Цикл{" "}
-          <TextSpan type="keyword">while</TextSpan> выполняется пока правдиво условие
-          стоящее после него (num {"<="} 100). Цикл{" "}
-          <TextSpan type="keyword">do ... while</TextSpan> отличается от предыдущего
-          только тем, что если его условие не выполняется, он все равно выполнит
-          операцию один раз.
+          <TextSpan type="keyword">while</TextSpan> выполняется пока правдиво
+          условие стоящее после него (num {"<="} 100). Цикл{" "}
+          <TextSpan type="keyword">do ... while</TextSpan> отличается от
+          предыдущего только тем, что если его условие не выполняется, он все
+          равно выполнит операцию один раз.
         </Paragraph>
         <Paragraph>
           Цикл for выполняется определённое количество раз. Это количество мы
@@ -366,8 +383,9 @@ const PythonParagraphs = () => {
         </Paragraph>
         <CodeSection>
           <CodeLine>
-            <TextSpan>for</TextSpan> <TextSpan>num</TextSpan> <TextSpan>in</TextSpan> <TextSpan>range</TextSpan>
-            (<TextSpan>100</TextSpan>):{" "}
+            <TextSpan>for</TextSpan> <TextSpan>num</TextSpan>{" "}
+            <TextSpan>in</TextSpan> <TextSpan>range</TextSpan>(
+            <TextSpan>100</TextSpan>):{" "}
             <CodeLine type="inner">
               <TextSpan>print</TextSpan>(<TextSpan>num</TextSpan>)
             </CodeLine>
@@ -383,20 +401,22 @@ const PythonParagraphs = () => {
           Можно заметить, что назначения функций, условий и циклов внешне
           сходятся в том, что их содержимое сдвинуто вправо, а после названия
           функции, условия или цикла стоит знак двоеточия (
-          <TextSpan type="highlight bold">:</TextSpan>). Если их убрать, то Python
-          выдаст ошибку и программа не будет работать:
+          <TextSpan type="highlight bold">:</TextSpan>). Если их убрать, то
+          Python выдаст ошибку и программа не будет работать:
         </Paragraph>
         <CodeSection>
           <CodeLine type="comment"># правильно</CodeLine>
           <CodeLine>
-            <TextSpan>def</TextSpan> <TextSpan>say</TextSpan>(<TextSpan>str</TextSpan>):
+            <TextSpan>def</TextSpan> <TextSpan>say</TextSpan>(
+            <TextSpan>str</TextSpan>):
             <CodeLine type="inner">
               <TextSpan>print</TextSpan>(<TextSpan>str</TextSpan>)
             </CodeLine>
           </CodeLine>
           <CodeLine type="comment"># неправильно</CodeLine>
           <CodeLine>
-            <TextSpan>def</TextSpan> <TextSpan>say</TextSpan>(<TextSpan>str</TextSpan>):{" "}
+            <TextSpan>def</TextSpan> <TextSpan>say</TextSpan>(
+            <TextSpan>str</TextSpan>):{" "}
             <CodeLine type="inner">
               <TextSpan>print</TextSpan>(<TextSpan>str</TextSpan>)
             </CodeLine>
@@ -406,8 +426,9 @@ const PythonParagraphs = () => {
           Также видно, что для выполнения функции, после ее названия нужно
           поставить круглые скобки, внутри которых при необходимости вставить
           аргументы. А чтобы написать какое-нибудь объяснение своему коду, перед
-          ним надо поставить хэштег (<TextSpan type="highlight bold">#</TextSpan>),
-          чтобы Питон не захотел выполнить написаное.
+          ним надо поставить хэштег (
+          <TextSpan type="highlight bold">#</TextSpan>), чтобы Питон не захотел
+          выполнить написаное.
         </Paragraph>
         <Paragraph>
           Такие детали у каждого языка программирования различаются. Лучший
@@ -454,9 +475,10 @@ const PythonParagraphs = () => {
           библиотек Python:
         </Paragraph>
         <Paragraph>
-          1. <TextSpan type="highlight bold">collections</TextSpan> - Эта библиотека
-          предоставляет дополнительные структуры данных, отличные от встроенных.
-          Она включает классы, такие как OrderedDict, defaultdict и Counter.
+          1. <TextSpan type="highlight bold">collections</TextSpan> - Эта
+          библиотека предоставляет дополнительные структуры данных, отличные от
+          встроенных. Она включает классы, такие как OrderedDict, defaultdict и
+          Counter.
         </Paragraph>
         <Paragraph>
           2. <TextSpan type="highlight bold">math</TextSpan> - Эта библиотека

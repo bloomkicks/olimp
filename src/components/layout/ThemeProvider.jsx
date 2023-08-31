@@ -1,7 +1,4 @@
-import {
-  createTheme,
-  ThemeProvider as Provider,
-} from "@mui/material/styles";
+import { createTheme, ThemeProvider as Provider } from "@mui/material/styles";
 import CssBaseline from "@mui/material/CssBaseline";
 
 const heroFontFam = "Manrope, sans-serif";

@@ -31,8 +31,7 @@ const AlgorithmsHero = () => {
           href: "#unweighted-graph",
         },
         {
-          title:
-            "Взвешенный граф и алгоритмы нахождения кратчайшего пути",
+          title: "Взвешенный граф и алгоритмы нахождения кратчайшего пути",
           href: "#weighted-graph",
         },
         {

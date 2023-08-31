@@ -36,16 +36,16 @@ export default function Document() {
           href={ASSET_PREFIX + "/apple-touch-icon.png"}
         />
         <link
-          rel="apple-touch-icon"
+          rel="icon"
           type="image/png"
-          sizes="180x180"
-          href={ASSET_PREFIX + "/apple-touch-icon.png"}
+          sizes="192x192"
+          href={ASSET_PREFIX + "/android-chrome-192x192.png"}
         />
         <link
           rel="icon"
           type="image/png"
-          sizes="192x192"
-          href={ASSET_PREFIX + "/google-chrome-192x192.png"}
+          sizes="512x512"
+          href={ASSET_PREFIX + "/android-chrome-512x512.png"}
         />
         <link
           rel="icon"
